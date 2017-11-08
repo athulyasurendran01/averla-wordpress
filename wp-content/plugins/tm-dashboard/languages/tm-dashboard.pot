@@ -1,0 +1,643 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TM Dashboard\n"
+"POT-Creation-Date: 2017-04-24 15:47+0300\n"
+"PO-Revision-Date: 2016-02-15 11:18+0200\n"
+"Last-Translator: \n"
+"Language-Team: Cherry Team\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/includes/class-tm-dashboard-helpful-links.php:56
+msgid "Helpful Links"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-interface.php:144
+#: admin/includes/class-tm-dashboard-interface.php:207
+msgid "Jetimpex Dashboard"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-interface.php:145
+msgid "Jetimpex"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-interface.php:208
+msgid "Dashboard"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-interface.php:212
+msgid "Jetimpex Updates"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-interface.php:213
+msgid "Updates"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-interface.php:243
+msgid "Page not exists"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-rate.php:86
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:85
+msgid "Unable to process the request without nonce or server error"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-rate.php:87
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:58
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:72
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:86
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:101
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:115
+msgid "No capabilities for this action"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-rate.php:88
+msgid "Sorry, something wrong. Try later."
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-rate.php:89
+msgid "Your review are send successfully"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-rate.php:95
+msgid "Rate us"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-system-info.php:56
+msgid "System Information"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-system-info.php:104
+msgid "Theme"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-system-info.php:119
+msgid "Server"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-system-info.php:135
+msgid "Active Plugins"
+msgstr ""
+
+#: admin/includes/class-tm-dashboard-system-info.php:169
+msgid "Installed Themes"
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-backups-table.php:165
+msgid "Restore - restore the specific backup copy"
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-backups-table.php:169
+msgid "Download - download a backup copy on your hard drive"
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-backups-table.php:173
+msgid "Delete - delete this backup copy"
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:57
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:71
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:100
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:114
+msgid "Oops! Something went wrong."
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:59
+msgid "Sorry, you are not allowed to save options"
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:60
+msgid "Options are saved successfully"
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:73
+msgid "Sorry, you are not allowed to create backup"
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:74
+msgid "You have just created a new backup"
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:87
+msgid "Sorry, you are not allowed to restore backup"
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:88
+msgid "You are chosen nothing parameters for restore"
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:89
+msgid "Backup are restored successfully"
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:102
+msgid "Sorry, you are not allowed to delete backup"
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:103
+msgid "Backup are deleted successfully"
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:116
+msgid "Sorry, you are not allowed to download backup"
+msgstr ""
+
+#: admin/includes/tm-backup/class-tm-dashboard-handlers.php:117
+msgid "Backup are downloaded successfully"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-get-theme-update.php:74
+#: admin/includes/tm-updates/class-tm-verified-theme.php:83
+msgid "Unable to process the request without nonche or server error"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-get-theme-update.php:75
+#: admin/includes/tm-updates/class-tm-verified-theme.php:84
+msgid "No right for this action"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-get-theme-update.php:76
+#: admin/includes/tm-updates/class-tm-verified-theme.php:85
+msgid "Stop CHEATING!!!"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-get-theme-update.php:90
+msgid "Something is wrong. Please contact support team for help."
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-get-theme-update.php:105
+msgid "Theme not verified"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-get-theme-update.php:115
+msgid "Can not get update."
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-get-theme-update.php:123
+msgid "Can not install update."
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-get-theme-update.php:129
+msgid "Update successfully."
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-notification-popup.php:66
+msgid ""
+"Attention! In order to prepare your theme backup, please click on "
+"the button \"Backup\""
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-notification-popup.php:78
+#: admin/includes/tm-updates/class-tm-themes-list.php:187
+msgid "Backup"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-notification-popup.php:85
+#: admin/includes/tm-updates/class-tm-notification-popup.php:147
+msgid "Cancel"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-notification-popup.php:105
+msgid ""
+"Attention! All current theme files &amp; settings will be "
+"overwritten."
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-notification-popup.php:121
+msgid "Theme Files"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-notification-popup.php:122
+msgid "Customizer Settings"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-notification-popup.php:125
+msgid ""
+"By default you will restore Theme Files and Customizer Settings. "
+"You can choose this option when needed:"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-notification-popup.php:140
+msgid "OK"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-forms.php:62
+#: admin/includes/tm-updates/class-tm-themes-forms.php:88
+msgid "Update"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-forms.php:83
+msgid "Theme version:"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-forms.php:85
+msgid "Updates available:"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-forms.php:98
+msgid ""
+"In order to get your theme updatings please enter the order ID and "
+"your theme ID."
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-forms.php:102
+msgid "Verification"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-forms.php:114
+msgid ""
+"In order to get your theme updatings please enter the order ID."
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-forms.php:122
+msgid "Template ID"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-forms.php:132
+msgid "Order ID"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-forms.php:141
+msgid "Submit"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:66
+#, php-format
+msgid ""
+"You don't have themes from the company %1$sTemplateMonsters%2$s"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:196
+msgid "Backup theme"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:208
+msgid "Advanced Options"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:218
+msgid "Backup before Update:"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:222
+#: admin/includes/tm-updates/class-tm-themes-list.php:237
+msgid "ON"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:223
+#: admin/includes/tm-updates/class-tm-themes-list.php:238
+msgid "OFF"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:227
+msgid ""
+"An option enables backup before update (a backup is made "
+"automatically right before the theme update changes will take "
+"place)"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:233
+msgid "Scheduled Backup:"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:244
+msgid "Here you can enable a sheduled backup"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:250
+msgid "Backup:"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:256
+msgid "Once Hourly"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:257
+msgid "Twice Daily"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:258
+msgid "Once Daily"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:259
+#: public/includes/class-tm-dashboard-cron.php:264
+msgid "Once Weekly"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:260
+#: public/includes/class-tm-dashboard-cron.php:269
+msgid "Once Every Two Weeks"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:261
+#: public/includes/class-tm-dashboard-cron.php:274
+msgid "Once Monthly"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:265
+msgid ""
+"In this field you can set the specific frequency when the backup "
+"is to be made"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:271
+msgid "Time of Backup:"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:279
+msgid "Here you can set particular time for backup"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:285
+msgid "Number of Backup Copies:"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:293
+msgid ""
+"The setting will define only the number of automatically made "
+"backups, you still can make as many backup copies manually, as you "
+"need to"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-themes-list.php:303
+msgid "Save Options"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-update-notices.php:94
+msgid "New Update"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-update-notices.php:114
+msgid "New version available."
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-update-notices.php:115
+msgid "View"
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-verified-theme.php:107
+msgid "Order details saved successfully."
+msgstr ""
+
+#: admin/includes/tm-updates/class-tm-verified-theme.php:115
+msgid "There are no updates now. You will get notified."
+msgstr ""
+
+#: admin/views/helpful-links.php:20
+msgid "Theme Documentation"
+msgstr ""
+
+#: admin/views/helpful-links.php:21
+msgid "Ticket system"
+msgstr ""
+
+#: admin/views/helpful-links.php:22
+msgid "Cherry Framework"
+msgstr ""
+
+#: admin/views/rate-form.php:21
+msgid "Your e-mail:"
+msgstr ""
+
+#: admin/views/rate-form.php:22
+msgid "Enter your e-mail"
+msgstr ""
+
+#: admin/views/rate-form.php:26
+msgid "Title:"
+msgstr ""
+
+#: admin/views/rate-form.php:27
+msgid "Enter title for your review"
+msgstr ""
+
+#: admin/views/rate-form.php:31
+msgid "Text:"
+msgstr ""
+
+#: admin/views/rate-form.php:32
+msgid "Please, write a few words about us"
+msgstr ""
+
+#: admin/views/rate-form.php:37
+msgid "Send"
+msgstr ""
+
+#: admin/views/table/auto-hint.php:22
+msgid "Scheduled Backup"
+msgstr ""
+
+#: admin/views/table/thead.php:22
+msgid "#"
+msgstr ""
+
+#: admin/views/table/thead.php:23
+msgid "Backup Date"
+msgstr ""
+
+#: admin/views/table/thead.php:24
+#: public/includes/class-tm-dashboard-tools.php:63
+msgid "Version"
+msgstr ""
+
+#: admin/views/table/thead.php:25
+msgid "Actions"
+msgstr ""
+
+#: cherry-framework/modules/cherry-breadcrumbs/cherry-breadcrumbs.php:346
+msgid "Home"
+msgstr ""
+
+#: cherry-framework/modules/cherry-breadcrumbs/cherry-breadcrumbs.php:352
+msgid "Browse:"
+msgstr ""
+
+#: cherry-framework/modules/cherry-breadcrumbs/cherry-breadcrumbs.php:354
+msgid "404 Not Found"
+msgstr ""
+
+#: cherry-framework/modules/cherry-breadcrumbs/cherry-breadcrumbs.php:355
+msgid "Archives"
+msgstr ""
+
+#: cherry-framework/modules/cherry-breadcrumbs/cherry-breadcrumbs.php:356
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
+#: cherry-framework/modules/cherry-breadcrumbs/cherry-breadcrumbs.php:357
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: cherry-framework/modules/cherry-breadcrumbs/cherry-breadcrumbs.php:358
+#, php-format
+msgid "Minute %s"
+msgstr ""
+
+#: cherry-framework/modules/cherry-breadcrumbs/cherry-breadcrumbs.php:359
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: cherry-framework/modules/cherry-customizer/cherry-customizer.php:269
+msgid "Untitled Panel"
+msgstr ""
+
+#: cherry-framework/modules/cherry-customizer/cherry-customizer.php:305
+msgid "Untitled Section"
+msgstr ""
+
+#: cherry-framework/modules/cherry-customizer/cherry-customizer.php:339
+msgid "Untitled Control"
+msgstr ""
+
+#: cherry-framework/modules/cherry-db-updater/cherry-db-updater.php:105
+#, php-format
+msgid ""
+"Module DB Updater init error in %s - version and slug is required "
+"arguments"
+msgstr ""
+
+#: cherry-framework/modules/cherry-db-updater/cherry-db-updater.php:106
+msgid "We need to update your database to the latest version."
+msgstr ""
+
+#: cherry-framework/modules/cherry-db-updater/cherry-db-updater.php:107
+msgid ""
+"Update complete, thank you for updating to the latest version!"
+msgstr ""
+
+#: cherry-framework/modules/cherry-db-updater/cherry-db-updater.php:331
+msgid "Start Update"
+msgstr ""
+
+#: cherry-framework/modules/cherry-db-updater/cherry-db-updater.php:368
+msgid "Data Update"
+msgstr ""
+
+#: cherry-framework/modules/cherry5-insert-shortcode/inc/class-cherry5-insertion-button.php:63
+msgid "Cherry shortcodes"
+msgstr ""
+
+#: cherry-framework/modules/cherry5-insert-shortcode/inc/class-cherry5-insertion-popup.php:128
+msgid "insert shortcode"
+msgstr ""
+
+#: cherry-framework/modules/cherry5-insert-shortcode/inc/class-cherry5-insertion-popup.php:148
+msgid "Shortcode List"
+msgstr ""
+
+#: cherry-framework/modules/cherry5-insert-shortcode/inc/class-cherry5-insertion-popup.php:206
+msgid "Shortcode not found."
+msgstr ""
+
+#: cherry-framework/modules/cherry5-insert-shortcode/inc/class-cherry5-insertion-popup.php:285
+msgid "Shortcode content."
+msgstr ""
+
+#: cherry-framework/modules/cherry5-insert-shortcode/inc/class-cherry5-insertion-popup.php:286
+msgid "Input shortcode content."
+msgstr ""
+
+#: cherry-framework/modules/cherry5-insert-shortcode/inc/class-cherry5-insertion-popup.php:301
+msgid "Shortcode not a have options."
+msgstr ""
+
+#: public/includes/class-tm-dashboard-paths.php:287
+#, php-format
+msgid ""
+"This %s file ensures that other people cannot download your backup "
+"files."
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:51
+#: public/includes/class-tm-dashboard-tools.php:89
+msgid "Yes"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:51
+#: public/includes/class-tm-dashboard-tools.php:89
+msgid "No"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:55
+msgid "ID"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:59
+msgid "Name"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:67
+msgid "Child Theme"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:76
+msgid "Site Title"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:80
+msgid "Site URL"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:84
+msgid "Home URL"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:88
+msgid "Multisite"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:92
+msgid "Email Address"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:162
+msgid "PHP Version"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:169
+msgid "PHP Memory Limit"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:174
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:179
+msgid "PHP Max Upload File Size"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:184
+msgid "PHP Max Input Time"
+msgstr ""
+
+#: public/includes/class-tm-dashboard-tools.php:189
+msgid "PHP Time Limit"
+msgstr ""
+
+#: public/includes/class-tm-theme-backup.php:115
+#: public/includes/class-tm-theme-backup.php:146
+msgid "Incompatible Archive."
+msgstr ""
+
+#: tm-dashboard.php:193
+msgid "Are you sure that you want to delete backup?"
+msgstr ""
+
+#: tm-dashboard.php:194
+msgid "All current theme files will be overwritten"
+msgstr ""

@@ -1,0 +1,46 @@
+// Dashboard page.
+h1.tm-dashboard__title {
+	// font-size: 30px;
+	// line-height: 1.2;
+	// font-weight: 700;
+}
+
+.tm-dashboard__body {
+	display: flex;
+
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.tm-dashboard-section {
+	box-sizing: border-box;
+	margin-left: 0;
+
+	flex-basis: 30%;
+}
+
+h2.tm-dashboard-section__title {
+	margin-top: 0;
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.tm-dashboard-section h5 {
+	margin-bottom: 0;
+	color: initial;
+}
+
+.tm-dashboard-section a {
+	&:focus {
+		outline: none;
+	}
+}
+.tm-dashboard-section__list li {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.tm-dashdoard-sys-info__content {
+	display: block;
+	padding: 0;
+}

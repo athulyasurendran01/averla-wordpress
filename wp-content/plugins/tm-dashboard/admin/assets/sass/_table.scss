@@ -1,0 +1,87 @@
+.tm-dashboard-table {
+	width: 100%;
+	max-width: 100%;
+	margin: 3rem 0 1rem;
+	font-size: 14px;
+	border-collapse: collapse;
+	counter-reset: rowNumber;
+	color: $gray-darken;
+	background-color: transparent;
+	th {
+		width: 25%;
+		text-align: left;
+		border-top: 1px solid $gray-light;
+		&:first-child {
+			width: 30px;
+			padding-left: 25px;
+		}
+		&:last-child {
+			width: auto;
+		}
+	}
+	th,
+	td {
+		position: relative;
+		padding: 1em 20px;
+		vertical-align: top;
+		border-bottom: 1px solid $gray-light;
+	}
+	tbody {
+		tr {
+			counter-increment: rowNumber;
+			td:first-child {
+				padding-left: 25px;
+				&::after {
+					content: counter(rowNumber);
+				}
+			}
+			td:last-child {
+				text-align: right;
+			}
+		}
+	}
+	&--striped {
+		tbody tr:nth-of-type(odd) {
+			background-color: $gray-lighten;
+		}
+	}
+}
+
+.tm-dashboard-table tbody tr.tm-dashboard-table__tr {
+	&--adding {
+		animation: adding 1.25s cubic-bezier(.19, 1, .22, 1);
+	}
+	&--removing {
+		animation: removing 1.25s cubic-bezier(.19, 1, .22, 1) 1 forwards;
+	}
+	&--restoring,
+	&--downloading {
+		animation: restoring 1.25s cubic-bezier(.19, 1, .22, 1) 1 forwards;
+	}
+}
+
+@keyframes adding {
+	0%,
+	100% {
+		color: currentColor;
+		background-color: transparent;
+	}
+	50% {
+		color: #fff;
+		background-color: $success-color;
+	}
+}
+
+@keyframes removing {
+	100% {
+		color: #fff;
+		background-color: $danger-color;
+	}
+}
+
+@keyframes restoring {
+	100% {
+		color: #fff;
+		background-color: $warning-color;
+	}
+}

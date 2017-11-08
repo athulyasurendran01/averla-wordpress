@@ -1,0 +1,38 @@
+.tm-dashboard-action-btn {
+	cursor: pointer;
+	color: $action-color;
+	.tm-dashboard-table__tr--removing &,
+	.tm-dashboard-table__tr--restoring &,
+	.tm-dashboard-table__tr--downloading & {
+		color: currentColor;
+		&:hover {
+			color: currentColor;
+		}
+	}
+	&:hover {
+		color: $gray-darken;
+	}
+	&--wait {
+		&:before {
+			display: block;
+			box-sizing: border-box;
+			width: 100%;
+			height: 100%;
+			content: '';
+			animation: spin .7s linear infinite;
+			border: 3px solid;
+			border-top: 3px solid #fff;
+			border-radius: 50%;
+			.tm-dashboard-table__tr--downloading &,
+			.tm-dashboard-table__tr--removing &,
+			.tm-dashboard-table__tr--restoring & {
+				border-top-color: #000;
+			}
+		}
+	}
+	&:not(.tm-dashboard-action-btn--wait) {
+		.tm-dashboard-processing & {
+			opacity: .5;
+		}
+	}
+}

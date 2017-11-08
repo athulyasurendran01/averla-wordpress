@@ -1,0 +1,37 @@
+$success_color: #48c569;
+$danger_color: #e54343;
+
+.tm-rate-form__field {
+	margin: 0;
+	vertical-align: top;
+
+	&.error {
+		border-color: $danger_color;
+		background-color: rgba($danger_color, 0.1);
+		&:focus {
+			border-color: rgba($danger_color, 0.6);
+			box-shadow: 0 0 5px rgba($danger_color, 0.6);
+		}
+	}
+
+	&.valid {
+		border-color: $success_color;
+		background-color: rgba($success_color, 0.1);
+		&:focus {
+			border-color: rgba($success_color, 0.6);
+			box-shadow: 0 0 5px rgba($success_color, 0.6);
+		}
+	}
+}
+
+.tm-rate-form span.error {
+	font-size: 90%;
+	display: block;
+	text-align: right;
+	color: $danger_color;
+}
+
+.tm-rate-form__btns {
+	padding-top: 15px;
+	text-align: right;
+}

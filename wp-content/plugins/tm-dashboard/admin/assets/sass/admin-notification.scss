@@ -1,0 +1,41 @@
+// Plugin menu icon.
+#toplevel_page_tm-dashboard {
+	.wp-menu-image {
+		img {
+			width: 20px;
+			height: 20px;
+			padding-top: 7px;
+		}
+	}
+}
+
+// Admin Notification.
+.tm-notification-label {
+	font-size: 9px;
+	font-weight: 600;
+	line-height: 17px;
+	display: inline-block;
+	padding: 0 6px;
+	color: #fff;
+	border-radius: 50%;
+	background-color: #48c569;
+	.wp-menu-name > & {
+		position: absolute;
+		top: 50%;
+		left: 21px;
+		margin-top: -1px;
+		.wp-menu-open > & {
+			display: none;
+		}
+	}
+	.wp-submenu & {
+		margin-left: 5px;
+	}
+}
+.tm-updates .notice {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: 0;
+}

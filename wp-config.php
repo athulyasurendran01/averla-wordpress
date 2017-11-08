@@ -20,16 +20,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'averla');
+define('DB_NAME', 'db_averla');
 
 /** MySQL database username */
-define('DB_USER', 'averla');
+define('DB_USER', 'root');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'averla123');
 
 /** MySQL hostname */
-define('DB_HOST', 'averla.cizgtkvetjbh.us-east-2.rds.amazonaws.com');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

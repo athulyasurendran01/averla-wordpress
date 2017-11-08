@@ -1,0 +1,133 @@
+.tm-updates {
+	.cherry-section {
+		margin-right: -10px;
+		@media (min-width: $tablet) {
+			margin-right: 0;
+		}
+	}
+	&-notice {
+		padding-bottom: 20px;
+	}
+	&__theme {
+		position: relative;
+		min-height: 270px;
+		&-content {
+			padding-top: 5px;
+			@media (min-width: $tablet) {
+				display: flex;
+				flex-direction: row;
+
+				flex-wrap: nowrap;
+				justify-content: flex-start;
+				align-items: flex-start;
+			}
+		}
+		&-image {
+			position: relative;
+			box-sizing: border-box;
+			margin-top: 5px;
+			margin-bottom: 20px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+			flex: 0 0 auto;
+			@media (min-width: $tablet) {
+				width: 315px;
+				margin-bottom: 0;
+			}
+			img {
+				width: 100%;
+				height: auto;
+				vertical-align: top;
+			}
+			.theme-screenshot {
+				position: relative;
+				display: block;
+				overflow: hidden;
+				background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAALElEQVQYGWO8d+/efwYkoKioiMRjYGBC4WHhUK6A8T8QIJt8//59ZC493AAAQssKpBK4F5AAAAAASUVORK5CYII=);
+				&:after {
+					display: block;
+					padding-top: 66.66666%;
+					content: '';
+				}
+			}
+		}
+		&-info,
+		&-wrap {
+			box-sizing: border-box;
+
+			flex: 0 1 100%;
+			@media (min-width: $tablet) {
+				padding-left: 40px;
+			}
+		}
+		&-info-table {
+			font-size: 14px;
+			margin-top: -10px;
+			margin-bottom: 18px;
+			color: $gray-darken;
+			td {
+				padding: 0 15px 5px 0;
+			}
+			.current-version,
+			.available-version {
+				color: $gray;
+				&--new {
+					color: $success-color;
+				}
+			}
+		}
+		&-form {
+			.cherry-ui-container {
+				@media (min-width: $tablet) {
+					max-width: 400px;
+				}
+			}
+			input.error-field {
+				border-color: $danger-color;
+				background-color: rgba($danger-color, 0.1);
+			}
+			&-controls {
+				&.show-form {
+					animation: show-form .5s ease-in-out;
+					@keyframes show-form {
+						0% {
+							transform: translate(0, 20px);
+							opacity: 0;
+						}
+						100% {
+							transform: translate(0, 0);
+							opacity: 1;
+						}
+					}
+				}
+				&.hide-form {
+					animation: hide-form .5s ease-in-out;
+					@keyframes hide-form {
+						0% {
+							transform: translate(0, 0);
+							opacity: 1;
+						}
+						100% {
+							transform: translate(0, 20px);
+							opacity: 0;
+						}
+					}
+				}
+			}
+		}
+		.updater-theme-button {
+			margin-right: 10px;
+		}
+	}
+	.updater-theme-button {
+		&[disabled].disabled {
+			opacity: 0.5;
+			.tm-dashboard-btn__loader {
+				opacity: 0;
+			}
+			.tm-dashboard-btn__text {
+				opacity: 1;
+			}
+		}
+	}
+}

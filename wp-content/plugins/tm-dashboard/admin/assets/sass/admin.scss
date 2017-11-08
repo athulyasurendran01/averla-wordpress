@@ -1,0 +1,51 @@
+@import url( '//fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800' );
+
+@import 'variables';
+
+.tm-dashboard-wrap,
+.tm-dashboard-popup {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $gray;
+
+	.tm-dashboard-h1-like,
+	.tm-dashboard-h2-like,
+	.tm-dashboard-h3-like {
+		font-weight: 600;
+		line-height: 1.2;
+		margin-top: 0;
+		color: $gray-darken;
+	}
+
+	.tm-dashboard-h1-like {
+		font-size: 30px;
+	}
+
+	.tm-dashboard-h2-like {
+		margin-bottom: 23px;
+		font-size: 26px;
+	}
+
+	.tm-dashboard-h3-like {
+		font-size: 20px;
+	}
+}
+
+.tm-dashboard-processing {
+	cursor: wait;
+	& * {
+		pointer-events: none;
+	}
+}
+
+@import 'icon';
+@import 'btn';
+@import 'dashboard-page';
+@import 'update-page';
+@import 'backup';
+@import 'rate-form';
+@import 'table';
+@import 'table-list';
+@import 'popup';
+@import 'hint';

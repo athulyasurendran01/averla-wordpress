@@ -1,0 +1,87 @@
+button.tm-dashboard-btn,
+.tm-dashboard-btn button {
+	position: relative;
+	&:focus {
+		box-shadow: 0 0 2px inset;
+	}
+	&[disabled],
+	&.success,
+	&.error {
+		cursor: default;
+		pointer-events: none;
+		.tm-dashboard-btn__text {
+			opacity: 0;
+		}
+	}
+	&[disabled] {
+		.tm-dashboard-btn__loader {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+	&.processing {
+		.tm-dashboard-btn__loader {
+			animation: spin .7s linear infinite;
+		}
+	}
+	&:not(.processing) {
+		.tm-dashboard-processing & {
+			opacity: .5;
+		}
+	}
+	&.success {
+		.tm-dashboard-btn__icon--yes {
+			transition-delay: .1s;
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+	&.error {
+		.tm-dashboard-btn__icon--no {
+			transition-delay: .1s;
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+}
+
+/* Loader */
+.tm-dashboard-btn__icon,
+.tm-dashboard-btn__loader {
+	transition: opacity .5s ease, transform .5s ease;
+	transform: scale(0);
+	opacity: 0;
+}
+.tm-dashboard-btn__text {
+	transition: opacity .5s ease;
+}
+.tm-dashboard-btn__icon {
+	font-size: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1em;
+	height: 1em;
+	margin: -0.5em 0 0 -0.5em;
+}
+.tm-dashboard-btn__loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: -13px 0 0 -13px;
+	border: 3px solid currentColor;
+	border-top: 3px solid rgba(0,0,0,.2);
+	border-radius: 50%;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
