@@ -1,0 +1,35 @@
+.post-navigation {
+	padding-top: 76px;
+	margin-bottom: 76px;
+	.nav-links {
+		text-transform: uppercase;
+	}
+}
+.pagination{
+	padding-top: 30px;
+	margin-bottom: 30px;
+}
+
+.nav-links {
+	text-align: left;
+	font-weight: 600;
+}
+
+.site-content .page-numbers,
+.tm-pg_front_gallery-navigation .tm_pg_nav-links a.tm_pg_page-numbers {
+	border-radius: 0;
+	width: auto;
+	height: auto;
+	min-width: auto;
+	line-height: 1.2;
+	border: none;
+	font-weight: 600;
+	margin-right: 10px;
+}
+
+div.site-content .page-links a,
+div.site-content .page-numbers,
+#tm_builder_outer_content div.pagination .page-numbers,
+div.tm-pg_front_gallery-navigation .tm_pg_nav-links a.tm_pg_page-numbers {
+	background-color: transparent;
+}

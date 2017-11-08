@@ -1,0 +1,17 @@
+.site-content {
+	.breadcrumbs {
+		padding: 35px 0;
+		background-color: transparent;
+
+		&:before {
+			display: none;
+		}
+
+		.row {
+			align-items: flex-end;
+		}
+		.breadcrumbs__item {
+			@include font-size(.75);
+		}
+	}
+}

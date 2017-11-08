@@ -1,0 +1,36 @@
+#tm_builder_outer_content {
+
+	.tm_pb_module.tm_pb_video_slider {
+
+		.tm-pb-slider-arrows {
+
+			.tm-pb-arrow {
+				&-prev,
+				&-next {
+					line-height: 44px;
+					width: 44px;
+					height: 44px;
+					margin-top: -22px;
+				}
+
+				&-prev {
+					@include border-right-radius($border__radius);
+					&:hover {
+						/*rtl:ignore*/
+						transform: translateX(2px) translateY(3px) translateZ(0);
+						box-shadow: none;
+					}
+				}
+
+				&-next {
+					@include border-left-radius($border__radius);
+					&:hover {
+						/*rtl:ignore*/
+						transform: translateX(-2px) translateY(3px) translateZ(0);
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
+}

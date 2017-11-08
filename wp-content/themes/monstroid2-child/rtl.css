@@ -1,0 +1,189 @@
+/*!
+Theme Name: Monstroid2
+
+Adding support for languages written in a Right To Left (RTL) direction is easy,
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+/*--------------------------------------------------------------
+# Reset
+--------------------------------------------------------------*/
+body {
+	direction: rtl;
+	unicode-bidi: embed; }
+
+/* These selectors should be LTR in a RTL language direction */
+input[type='email'],
+input[type='tel'],
+input[type='url'],
+.slider-pro,
+.lg-outer,
+.tm_timeline__container .contol_wrap {
+	direction: ltr; }
+
+input[type='email'],
+input[type='tel'],
+input[type='url'] {
+	text-align: right; }
+
+/* Arrow rotate */
+.swiper-button-next i,
+.swiper-button-prev i,
+.link i {
+	display: inline-block;
+	transform: rotate(180deg); }
+
+/*--------------------------------------------------------------
+#  TM Mega-menu
+--------------------------------------------------------------*/
+.tm-mega-menu .tm-mega-menu-sub.simple-sub li.tm-mega-menu-has-children > a > i.mega-menu-arrow.fa-angle-right {
+	transform: rotate(180deg); }
+
+.mega-menu-arrow {
+	padding: 0 4px 0 0; }
+
+/*--------------------------------------------------------------
+# Woocommerce
+--------------------------------------------------------------*/
+.tm-woocompare-wrapper .tablesaw th,
+.tm-woocompare-wrapper .tablesaw td,
+.woocommerce table.shop_table tbody tr.cart_item td.product-name,
+.woocommerce form.login {
+	text-align: right; }
+
+.woocommerce #content table.cart td.actions,
+.woocommerce table.cart td.actions,
+.woocommerce-page #content table.cart td.actions,
+.woocommerce-page table.cart td.actions {
+	text-align: left; }
+
+.tablesaw-bar .tablesaw-advance,
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .cart_totals,
+#add_payment_method #payment .payment_method_paypal .about_paypal,
+.woocommerce-cart #payment .payment_method_paypal .about_paypal,
+.woocommerce-checkout #payment .payment_method_paypal .about_paypal,
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+	float: left; }
+
+.woocommerce .single_product_wrapper .entry-summary .star-rating,
+.woocommerce div.product form.cart .button,
+.woocommerce .woo-social-buttons span.custom,
+.woocommerce-cart table.cart td.actions .coupon .input-text,
+.woocommerce #content table.cart td.actions .coupon,
+.woocommerce table.cart td.actions .coupon,
+.woocommerce-page #content table.cart td.actions .coupon,
+.woocommerce-page table.cart td.actions .coupon {
+	float: right; }
+
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+	padding: 1em 3.5em 1em 2em !important; }
+	.woocommerce-error:before,
+	.woocommerce-info:before,
+	.woocommerce-message:before {
+		left: auto; }
+	.woocommerce-error a,
+	.woocommerce-info a,
+	.woocommerce-message a {
+		display: inline-block; }
+
+.woocommerce div.product form.cart .variations td.label {
+	padding-right: 0; }
+
+.woocommerce div.product form.cart .variations select {
+	margin-right: 0; }
+
+.woocommerce .product_meta > span span, .woocommerce .product_meta > span a {
+	display: inline-block; }
+
+.woocommerce ol.commentlist li img.avatar {
+	float: right;
+	right: 0;
+	left: auto; }
+
+.woocommerce #reviews #comments .star-rating {
+	float: left; }
+
+#add_payment_method #payment ul.payment_methods li,
+.woocommerce-cart #payment ul.payment_methods li,
+.woocommerce-checkout #payment ul.payment_methods li {
+	text-align: right; }
+	#add_payment_method #payment ul.payment_methods li input,
+	.woocommerce-cart #payment ul.payment_methods li input,
+	.woocommerce-checkout #payment ul.payment_methods li input {
+		margin: 0 0 0 1em; }
+
+.woocommerce #payment .terms,
+.woocommerce #payment .wc-terms-and-conditions,
+.woocommerce-page #payment .terms,
+.woocommerce-page #payment .wc-terms-and-conditions {
+	float: right;
+	padding: 0 0 0 1em; }
+
+.woocommerce form .form-row .input-checkbox {
+	margin-right: 0;
+	margin-left: 8px; }
+
+/* Wishlist */
+.tm-woowishlist-item .tm-woowishlist-remove {
+	left: 0;
+	right: auto; }
+
+.tm-woowishlist-item .tm-woocomerce-list__product-image {
+	margin: 0 0 10px 30px; }
+
+/*--------------------------------------------------------------
+# Cherry Projects
+--------------------------------------------------------------*/
+.cherry-projects-ajax-loader .cherry-spinner,
+.projects-end-line-spinner .cherry-spinner {
+	right: 50%;
+	left: auto;
+	margin-right: -45px;
+	margin-left: 0; }
+
+.cherry-projects-ajax-loader .cherry-spinner {
+	margin-right: -45px; }
+
+.projects-end-line-spinner .cherry-spinner {
+	margin-right: -35px; }
+
+.smart-slider__instance .sp-full-screen-button,
+.cherry-projects-slider__instance .slider-pro .sp-full-screen-button {
+	left: 20px;
+	right: auto; }
+
+/*--------------------------------------------------------------
+# Moto tools integration
+--------------------------------------------------------------*/
+.mti-event__participant-link {
+	margin: 0 0 0 20px; }
+
+.mti-event__schedule-column {
+	border-right: none;
+	border-left: 1px solid #e5e5e5; }
+
+.mti-event__schedule-timeslot {
+	padding-left: 0;
+	padding-right: 30px; }
+
+/*--------------------------------------------------------------
+# TM Photo Gallery
+--------------------------------------------------------------*/
+.tm-pg_front_gallery-grid .tm_pg_gallery-item_label,
+.tm-pg_front_gallery-masonry .tm_pg_gallery-item_label,
+.tm-pg_front_gallery-justify .tm_pg_gallery-item_label {
+	left: auto;
+	right: 10px; }
+
+.lg-toolbar .lg-icon {
+	float: left; }
+
+.lg-outer .lg-icon.lg-toogle-thumb {
+	left: 10px;
+	right: auto; }

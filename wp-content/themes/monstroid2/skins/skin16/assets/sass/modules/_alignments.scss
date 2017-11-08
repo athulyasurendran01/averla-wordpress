@@ -1,0 +1,12 @@
+.entry-content {
+	> p {
+		> img {
+			&.size-full {
+				@include media-breakpoint-up(lg) {
+					margin-top: 48px;
+					margin-bottom: 44px;
+				}
+			}
+		}
+	}
+}

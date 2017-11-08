@@ -1,0 +1,60 @@
+#tm_builder_outer_content {
+	.tm_pb_pricing.tm_pb_module {
+		.tm_pb_pricing_table {
+			text-align: left;
+			border: none;
+
+			&.tm_pb_featured_table {
+				box-shadow: none;
+			}
+			.tm_pb_pricing_heading,
+			.tm_pb_pricing_content_top,
+			.tm_pb_pricing_content,
+			.tm_pb_pricing_content ul.tm_pb_pricing li {
+				padding: 0;
+				text-align: left;
+			}
+			.tm_pb_best_value {
+				margin-top: 0;
+			}
+			.tm_pb_pricing_heading {
+				margin-bottom: 14px;
+			}
+			.tm_pb_pricing_content_top {
+				&:after {
+					display: none;
+				}
+			}
+			.tm_pb_pricing_content {
+				@include font-size(1);
+
+				margin-top: 22px;
+
+				ul.tm_pb_pricing {
+					li {
+						position: relative;
+						padding-left: 20px;
+
+						&:before {
+							content: '';
+							width: 7px;
+							height: 7px;
+							display: inline-block;
+							vertical-align: middle;
+							border-radius: 50%;
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
+						}
+						& + li {
+							margin-top: 6px;
+						}
+					}
+				}
+			}
+			.tm_pb_pricing_table_button {
+				margin-top: 34px;
+			}
+		}
+	}
+}

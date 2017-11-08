@@ -1,0 +1,20 @@
+.search-form {
+	&__submit {
+		.site-header & {
+			background: none !important;
+		}
+	}
+}
+
+.cherry-search form.cherry-search__form.search-form button.search-submit {
+	padding-top: $padding__buttons_y;
+	padding-bottom: $padding__buttons_y;
+}
+
+.cherry-search .cherry-search__more-button {
+	letter-spacing: 0.04px;
+}
+
+.cherry-search .cherry-search__item-title {
+	letter-spacing: normal;
+}

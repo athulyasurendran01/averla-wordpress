@@ -1,0 +1,98 @@
+.comment-body__holder {
+	.comment-content-wrap {
+		background-color: transparent;
+		padding: 0;
+
+		&:before {
+			display: none;
+		}
+	}
+	.comment-metadata {
+		display: flex;
+		@include grid-indent(9px);
+
+		h6 {
+			letter-spacing: inherit;
+			text-transform: none;
+			font-weight: bold;
+			margin: 0;
+			order: 2;
+		}
+		.comment-date {
+			order: 1;
+		}
+	}
+}
+.comment {
+	&-list {
+		.children {
+			> .comment {
+				margin-top: 35px;
+			}
+		}
+		> .comment,
+		> .ping {
+			& + .comment,
+			& + .ping {
+				margin-top: 35px;
+			}
+		}
+		& + .comment-respond {
+			padding-top: 32px;
+			border: none;
+		}
+	}
+	.comment-content-wrap {
+		.comment-content {
+			margin-top: 3px;
+
+			p {
+				@include font-size(1);
+				line-height: inherit;
+			}
+		}
+	}
+	.comment-reply-link {
+		text-indent: -9999em;
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		position: relative;
+
+		&:before {
+			@include nucleo-mini-icon;
+
+			content: '\e911';
+			font-size: 20px;
+			line-height: 25px;
+			text-indent: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	.reply {
+		margin-top: 32px;
+	}
+}
+.comment-reply-title {
+	margin-bottom: 24px;
+
+	#cancel-comment-reply-link {
+		font-style: normal;
+	}
+}
+.comment-form .comment-notes,
+.comment-form .logged-in-as {
+	margin-bottom: 33px;
+}
+.comment-form-author,
+.comment-form-comment,
+.comment-form-email,
+.comment-form-url {
+	margin-bottom: 30px;
+}
+
+.comment-form .form-submit {
+	margin-top: 30px;
+}

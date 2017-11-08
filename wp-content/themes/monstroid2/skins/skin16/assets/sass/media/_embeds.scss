@@ -1,0 +1,22 @@
+.embed-responsive.embed-responsive-16by9 {
+	.posts-list & {
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 56%;
+		}
+	}
+}
+.site-content {
+	.wp-playlist.wp-audio-playlist {
+		&.wp-playlist-light {
+			background: none;
+			border-color: $color_gray;
+		}
+		.wp-playlist-current-item {
+			.wp-playlist-caption {
+				.wp-playlist-item-title {
+					letter-spacing: 0;
+				}
+			}
+		}
+	}
+}

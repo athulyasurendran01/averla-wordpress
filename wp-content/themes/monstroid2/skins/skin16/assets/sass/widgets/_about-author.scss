@@ -1,0 +1,20 @@
+.widget-about-author {
+	.widget-title {
+		.sidebar & {
+			margin-bottom: 21px;
+		}
+	}
+}
+.about-author_avatar {
+	.about-author_img {
+		border-radius: 0;
+	}
+}
+.about-author_description {
+	margin-bottom: 33px;
+}
+.about-author_btn {
+	i {
+		display: none;
+	}
+}

@@ -1,0 +1,32 @@
+.footer-container {
+	padding: 15px 0 18px;
+}
+.footer-area {
+	@include media-breakpoint-up(lg) {
+		padding: 112px 0 47px;
+	}
+}
+.footer-logo-wrap {
+	@include grid-indent(5px);
+
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+
+	@include media-breakpoint-up(lg) {
+		justify-content: flex-start;
+	}
+
+	@include media-breakpoint-up(xl) {
+		margin-top: -6px;
+	}
+	.footer-copyright {
+		line-height: 1.5;
+	}
+}
+
+.site-footer.default .site-info .footer-logo + .footer-menu + .footer-copyright,
+.site-footer.default .site-info .footer-logo ~ .site-info__bottom,
+.site-footer.default .site-info .footer-menu ~ .site-info__bottom {
+	border-color: $color_hr_invert;
+}

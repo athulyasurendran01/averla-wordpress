@@ -1,0 +1,33 @@
+.mptt-main-wrapper .mptt-content .events-list li.event .event-title:hover,
+.widget.mptt-container ul.mptt-widget.events-list li.event .column-title,
+.widget.mptt-container ul.mptt-widget.events-list li.event .timeslot {
+	color: $regular_accent_color_1;
+}
+.mptt-main-wrapper .mptt-content .events-list li.event::before,
+.mptt-main-wrapper .mptt-content .events-list li.event .event-title,
+.single-mp-event .timeslot::before {
+	color: $regular_text_color;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-list .mptt-column .mptt-events-list .mptt-list-event .timeslot,
+body .mptt-shortcode-wrapper .mptt-shortcode-list .mptt-column .mptt-events-list li.mptt-list-event {
+	color: $regular_accent_color_2;
+}
+.single-mp-event .timeslots-title {
+	font-weight: $h6_font_weight;
+}
+body .mptt-shortcode-wrapper .mptt-shortcode-table tbody td.event {
+	background-color: $invert_text_color;
+}
+body .mptt-shortcode-wrapper .mptt-shortcode-table thead tr.mptt-shortcode-row th {
+	background-color: $regular_accent_color_3;
+	color: $regular_accent_color_2;
+	font-style: $meta_font_style;
+}
+body .mptt-shortcode-wrapper .mptt-shortcode-table tr td.mptt-shortcode-event > .mptt-event-container {
+	background-color: $regular_accent_color_1;
+	color: $invert_text_color;
+}
+body .mptt-shortcode-wrapper .mptt-shortcode-table tr td.mptt-shortcode-event > .mptt-event-container:hover {
+	background-color: $regular_accent_color_3;
+	color: $regular_accent_color_2;
+}

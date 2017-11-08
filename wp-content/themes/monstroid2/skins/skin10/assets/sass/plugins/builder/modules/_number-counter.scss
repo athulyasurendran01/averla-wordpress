@@ -1,0 +1,19 @@
+#tm_builder_outer_content {
+	.tm_pb_number_counter.tm_pb_module {
+		.tm-pb-icon {
+			@include font-size(65/16);
+			margin-bottom: 19px;
+		}
+
+		.percent-value {
+			&:after {
+				content: '';
+				display: block;
+				margin: 25px auto 9px;
+				width: 62px;
+				height: 3px;
+				background-color: $color__background-hr;
+			}
+		}
+	}
+}

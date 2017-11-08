@@ -1,0 +1,71 @@
+.tm_builder_outer_content {
+	h1,
+	h2,
+	h3,
+	h1 + p,
+	h2 + p,
+	h3 + p {
+		+ hr {
+			display: block;
+			width: 78px;
+			height: 3px;
+			margin-top: -9px;
+			margin-bottom: 30px;
+			@include media-breakpoint-up(lg) {
+				margin-bottom: 56px;
+			}
+		}
+	}
+
+	h1 + p,
+	h2 + p,
+	h3 + p {
+		margin-bottom: 29px;
+	}
+
+	h1, h2 {
+		margin-bottom: 20px;
+	}
+
+	h3 {
+		margin-bottom: 23px;
+	}
+
+	.tm_pb_text_align_center h1 + hr,
+	.tm_pb_text_align_center h2 + hr,
+	.tm_pb_text_align_center h3 + hr,
+	.tm_pb_text_align_center h1 + p + hr,
+	.tm_pb_text_align_center h2 + p + hr,
+	.tm_pb_text_align_center h3 + p + hr,
+	.tm_pb_brands_showcase_module__title::after {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.tm_pb_text {
+		a[href^='tel:'] {
+			&:before {
+				content: '\e76a';
+				font-family: 'Linearicon';
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				-webkit-font-feature-settings: "liga";
+				-moz-font-feature-settings: "liga=1";
+				-moz-font-feature-settings: "liga";
+				-ms-font-feature-settings: "liga" 1;
+				-o-font-feature-settings: "liga";
+				font-feature-settings: "liga";
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				position: relative;
+				top: .08em;
+				margin-right: .37em;
+				display: inline-block;
+			}
+		}
+	}
+}

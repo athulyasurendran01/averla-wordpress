@@ -1,0 +1,117 @@
+.single .post {
+	.entry-header, .entry-meta {
+		text-align: center;
+	}
+
+	h3.entry-title {
+		@include before;
+	}
+
+}
+
+/*Make image in post fullwidth while single post*/
+$single_post_image_width: 26%;
+.blog-default.position-fullwidth.single-post .post {
+	@media (min-width: 1441px) {
+		.post-thumbnail__img {
+			width: auto;
+		}
+		img:not(.swiper-image) {
+			margin-left: -$single_post_image_width;
+			margin-right: -$single_post_image_width;
+			max-width: calc(100% + #{$single_post_image_width} * 2);
+		}
+		a[data-popup="magnificPopup"] {
+			&:before {
+				left: -26%;
+				right: -26%;
+			}
+		}
+
+	}
+}
+
+@media (min-width: 1200px) {
+	.position-one-right-sidebar .site-content_wrap .sidebar {
+		padding-left: 1.5625rem;
+		&:before {
+			display: none;
+		}
+	}
+
+	.position-one-left-sidebar .site-content_wrap .sidebar {
+		padding-right: 1.5625rem;
+		&:before {
+			display: none;
+		}
+	}
+}
+
+.post-list__item-content {
+	background-color: $color__background-input;
+}
+
+.posts-list--default {
+	.posts-list__item {
+		.entry-header {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		.entry-meta {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+	}
+}
+
+.posts-list:not(.posts-list--default) {
+	.posts-list__item {
+		.entry-footer {
+			background-color: $color__background-input;
+			padding: 0 30px 30px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			> * {
+				margin-top: 0;
+			}
+		}
+		.entry-meta {
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+	}
+}
+
+.posts-list--default {
+	.hentry + .hentry {
+		border-top: none;
+		padding-top: 0;
+	}
+}
+
+.post-featured-content {
+	margin-bottom: 0;
+}
+
+.comment-navigation .nav-previous > a,
+.comment-navigation .nav-next > a,
+.posts-navigation .nav-previous > a,
+.posts-navigation .nav-next > a,
+.post-navigation .nav-previous > a,
+.post-navigation .nav-next > a{
+	@include font-size(1);
+	font-weight: bold;
+}
+
+.single .related-posts{
+	border-top:none;
+}
+
+#tm_builder_outer_content div.tm_pb_posts .tm-posts_layout-3 .tm-posts_item_content{
+	background: transparent;
+}
+/*--------------------------------------------------------------
+### Sticky Post
+--------------------------------------------------------------*/
+@import "sticky";

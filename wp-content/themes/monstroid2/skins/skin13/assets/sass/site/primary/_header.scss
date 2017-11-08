@@ -1,0 +1,19 @@
+.header-container {
+	.style-3 &,
+	.style-7 & {
+		padding-left: 46px;
+		padding-right: 46px;
+	}
+}
+
+.site-header {
+	box-shadow: 2px 2px 16px 0 rgba(0,0,0,.08);
+}
+
+@import "header/layout-default";
+@import "header/layout-centered";
+@import "header/layout-modern";
+@import "header/layout-minimal";
+@import "header/layout-creative";
+@import "header/top-panel";
+@import "header/logo";

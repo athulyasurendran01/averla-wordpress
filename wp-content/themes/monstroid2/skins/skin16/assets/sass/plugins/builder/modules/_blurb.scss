@@ -1,0 +1,35 @@
+#tm_builder_outer_content {
+	.tm_pb_blurb.tm_pb_module {
+		.tm_pb_main_blurb_image {
+			margin-bottom: 24px;
+		}
+		.tm-pb-icon {
+			@include font-size(3.125);
+		}
+		.tm_pb_blurb_container {
+			h4 {
+				margin-bottom: 10px;
+			}
+		}
+		a {
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		&.tm_pb_blurb_position_top {
+			.tm_pb_main_blurb_image {
+				margin-bottom: 23px;
+
+				@include media-breakpoint-up(lg) {
+					margin-bottom: 48px;
+				}
+			}
+			.tm-pb-icon {
+				padding-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.swiper {
+	&-button-next,
+	&-button-prev {
+		border-radius: 50%;
+
+		@include media-breakpoint-up(lg) {
+			bottom: 19px;
+			margin: 0;
+			top: auto;
+			transform: none;
+		}
+		i:before {
+			@include nucleo-mini-icon;
+			font-size: 14px;
+			display: block;
+			line-height: 50px;
+		}
+
+		& + .swiper-pagination {
+			@include media-breakpoint-up(lg) {
+				z-index: 10;
+				padding: 0 140px;
+			}
+		}
+	}
+
+	&-button-prev {
+		@include media-breakpoint-up(lg) {
+			z-index: 100;
+			right: 73px;
+			left: auto;
+		}
+		i:before {
+			content: '\e903';
+		}
+	}
+	&-button-next {
+		@include media-breakpoint-up(lg) {
+			z-index: 100;
+			right: 20px;
+		}
+		i:before {
+			content: '\e904';
+		}
+	}
+}

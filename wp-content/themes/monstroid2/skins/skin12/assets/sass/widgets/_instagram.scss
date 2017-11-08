@@ -1,0 +1,53 @@
+.instagram,
+.cs-instagram {
+	&__items {
+
+	}
+	&__item {
+		padding: 0;
+
+		.full-width-header-area &,
+		.after-content-full-width-area & {
+			flex: 0 0 50%;
+			max-width: 50%;
+			
+			@include media-breakpoint-up(md) {
+				flex: 0 0 25%;
+				max-width: 25%;
+			}
+			@include media-breakpoint-up(xl, $grid-breakpoints-old) {
+				flex: 0 0 12.5%;
+				max-width: 12.5%;
+			}
+		}
+	}
+	&__link {
+		display: flex;
+	}
+	&__img {
+		border-radius: 0;
+		width: 100%;
+		height: 100%;
+	}
+	&__cover {
+		border-radius: 0;
+
+		&:before {
+			content:'\f16d';
+			font-family: FontAwesome;
+			font-size: 38px;
+			line-height: 1;
+			width: 38px;
+			height: 38px;
+			margin: -19px 0 0 -19px;
+		}
+		.widget-instagram &,
+		.cs-instagram--widget &{
+			background-color: rgba(0,0,0,.6);
+		}
+	}
+	&__caption {
+		margin: 0;
+	}
+}
+

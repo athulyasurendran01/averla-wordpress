@@ -1,0 +1,26 @@
+.post-author-bio {
+	margin-bottom: 0;
+	padding-bottom: 60px;
+	border: none;
+	position: relative;
+
+	&:before {
+		display: inline-block;
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: -100%;
+		right: -100%;
+		background-color: white;
+		z-index: -1;
+	}
+}
+
+.position-one-left-sidebar,
+.position-one-right-sidebar{
+	.post-author-bio:before{
+		left: 0;
+		right: 0;
+	}
+}

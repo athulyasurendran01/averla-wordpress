@@ -1,0 +1,82 @@
+.search-form {
+	&,
+	.cherry-search &.cherry-search__form {
+		.site-header & {
+			align-items: center;
+		}
+	}
+
+	&__toggle {
+		top: 5px;
+	}
+	&__field[type='search'],
+	.cherry-search__field.search-field[type="search"] {
+		.site-header & {
+			@include font-size(1);
+		}
+
+		i + & {
+			padding-left: $input__indents_x;
+			@include media-breakpoint-up(md) {
+				padding-left: $input__indents_x;
+			}
+			.sidebar & {
+				@include media-breakpoint-only(lg) {
+					padding-left: $input__indents_x;
+				}
+			}
+			.tm_pb_column_1_3 & {
+				@include media-breakpoint-between(md,lg) {
+					padding-left: $input__indents_x;
+				}
+			}
+			.footer-area:not(.footer-area--fullwidth) &,
+			.tm_pb_column_1_4 & {
+				@include media-breakpoint-up(md) {
+					padding-left: $input__indents_x;
+				}
+			}
+			.sidebar-1-4 .sidebar & {
+				@include media-breakpoint-up(lg) {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+			}
+		}
+	}
+	&__submit[type='submit'] {
+		.site-header &,
+		.site-header .invert & {
+
+			box-shadow: none;
+			background: none;
+			&:hover {
+				transform: none;
+				background: none;
+			}
+
+		}
+	}
+
+	&__field-icon {
+		display: none;
+	}
+}
+
+.cherry-search form.cherry-search__form.search-form button.search-submit {
+	padding-top: $button__indents_y;
+	padding-bottom: $button__indents_y;
+}
+
+.cherry-search {
+	& &__more-button {
+		@include font-size(1);
+		font-weight: 400;
+		letter-spacing: 2.5px;
+	}
+
+	& &__results-list {
+		margin-top: 5px;
+	}
+}
+

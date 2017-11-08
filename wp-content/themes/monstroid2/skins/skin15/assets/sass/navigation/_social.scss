@@ -1,0 +1,42 @@
+.social-list {
+
+	.menu-item {
+
+		> a {
+
+			&[href*="facebook.com"]::before       {
+				color:$color__facebook
+			}
+			&[href*="instagram.com"]::before      {
+				color: $color__instagram;
+			}
+			&[href*="linkedin.com"]::before       {
+				color: $color__linked;
+			}
+			&[href*="twitter.com"]::before        {
+				color: $color__twitter;
+			}
+			&[href*="youtube.com"]::before        {
+				color:$color__youtube;
+			}
+			&::before {
+				.site-footer:not(.style-2) & {
+					transition: .3s;
+				}
+				.site-header & {
+					transition: .3s;
+				}
+			}
+		}
+	}
+
+}
+.fa:before{
+	transition: .3s;
+}
+.facebook, .fa-facebook:before{ color:$color__facebook}
+.twitter, .fa-twitter:before{ color:$color__twitter}
+.google, .fa-google-plus:before{ color:$color__youtube}
+.instagram, .fa-linkedin:before{ color:$color__instagram}
+.printerest, .fa-pinterest:before{color:$color__printerest}
+

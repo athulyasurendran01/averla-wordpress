@@ -1,0 +1,10 @@
+.sidebar .widget-about {
+	img {
+		width: 100%;
+	}
+	&__content {
+		margin-top: 23px;
+		@include font-size(1);
+		line-height: 1.4375;
+	}
+}

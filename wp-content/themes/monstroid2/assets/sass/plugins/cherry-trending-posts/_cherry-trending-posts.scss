@@ -1,0 +1,60 @@
+$star-color: #c7c7c7;
+$accent-star-color: #ffc045;
+
+.cherry-trend-rating {
+	@include font-size(.9375);
+
+	.single-modern-header & {
+		margin-top: 30px;
+
+		&:first-child {
+			@include media-breakpoint-up(lg) {
+				margin-top: 55px;
+			}
+		}
+	}
+}
+
+.cherry-trend-stars {
+	vertical-align: middle;
+}
+
+.cherry-trend-star {
+	width: 17px;
+	height: 17px;
+	font-size: 17px;
+	color: $star-color;
+	vertical-align: baseline;
+	font-style: normal;
+
+	&--active {
+		&,
+		& ~ .cherry-trend-star {
+			color: $accent-star-color;
+		}
+	}
+}
+
+.cherry-trend-views{
+	vertical-align: baseline;
+	&__count {
+		&::before {
+			font-size: 1.333em;
+			content: '\e6a5';
+			@extend %linear-icon;
+			position: relative;
+			vertical-align: baseline;
+			top: 0.1665em;
+		}
+	}
+}
+
+.cherry-trend-post__meta {
+	margin-bottom: .5em;
+}
+
+.cherry-trend-widget-list__item {
+	> *:last-child {
+		margin-bottom: 2em;
+	}
+}

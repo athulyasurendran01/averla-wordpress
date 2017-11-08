@@ -1,0 +1,23 @@
+.cherry-team.team-wrap {
+	.team-listing {
+		padding: 0;
+
+		.team-listing_name {}
+		.team-listing_position {
+			@include font-size(1);
+			font-style: italic;
+		}
+		.team-listing_desc {
+			margin-top: 13px;
+		}
+	}
+	.team-listing_content {
+		@include media-breakpoint-up(xl) {
+			padding-left: 15%;
+			padding-right: 15%;
+		}
+	}
+	.team-socials {
+		padding-top: 29px;
+	}
+}

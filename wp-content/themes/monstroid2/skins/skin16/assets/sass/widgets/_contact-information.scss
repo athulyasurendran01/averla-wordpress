@@ -1,0 +1,12 @@
+.contact-information-widget {
+	.contact-information-widget__inner {
+		.contact-information__item {
+			& + .contact-information__item {
+				margin-top: 0;
+			}
+		}
+	}
+	a[href^="mailto"] {
+		text-decoration: underline;
+	}
+}

@@ -1,0 +1,30 @@
+.share-btns__list {
+	.share-btns__link {
+		@include font-size(1.25);
+	}
+	.facebook-item {
+		a {
+			color: $color_facebook;
+		}
+	}
+	.twitter-item {
+		a {
+			color: $color_twitter;
+		}
+	}
+	.google-plus-item {
+		a {
+			color: $color_google;
+		}
+	}
+	.linkedin-item {
+		a {
+			color: $color_linkedin;
+		}
+	}
+	.pinterest-item {
+		a {
+			color: $color_pinterest;
+		}
+	}
+}

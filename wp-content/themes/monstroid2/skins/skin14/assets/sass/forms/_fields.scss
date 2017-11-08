@@ -1,0 +1,41 @@
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+select,
+textarea {
+	line-height: 1.4167;
+	border-radius: 0;
+
+	font-style: normal;
+	border-color: $color__background-hr;
+	background-color: $color__input-background;
+
+	padding-top: 9px;
+	padding-bottom: 9px;
+	@include font-size(0.75);
+	&:focus {
+		background-color: transparent;
+	}
+
+	.widget-subscribe &,
+	.site-footer & {
+		border-color: $color_input-border;
+		background-color: transparent;
+	}
+}
+
+* + div.wpcf7 {
+	margin-top: 30px;
+}

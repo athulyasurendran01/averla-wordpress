@@ -1,0 +1,137 @@
+.widget-carousel {
+	overflow: hidden;
+	.swiper-container {
+		overflow: visible;
+	}
+
+	.swiper-button-next i:before{
+		content:'\f054';
+		@include font-awesome-icon;
+	}
+
+	.swiper-button-prev i:before{
+		content:'\f053';
+		@include font-awesome-icon;
+	}
+
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		top: -35px;
+		width: 20px;
+		height: 20px;
+		background-color: transparent;
+		opacity: 1;
+		transition: .3s;
+		&:hover {
+			cursor: pointer;
+		}
+		i {
+			line-height: 20px;
+			font-size: 14px;
+		}
+	}
+	.swiper-button-prev,
+	.swiper-container.swiper-container-horizontal .swiper-button-prev {
+		left: auto;
+		right: 30px;
+	}
+	.swiper-slide {
+		.post-thumbnail__link {
+			margin-bottom: 10px;
+		}
+		& + .swiper-slide {
+			position: relative;
+			&:before {
+				content: "";
+				position: absolute;
+				width: 1px;
+				top: 0;
+				bottom: 0;
+				left: -15px;
+				background-color: $color__background-hr;
+				display: inline-block;
+				@media (min-width: 1200px) {
+					left: -20px;
+				}
+			}
+		}
+	}
+	.swiper-container[data-space-between-slides="0"]{
+		.swiper-slide:before{
+			display: none;
+		}
+	}
+	.posted-by {
+		display: block;
+	}
+	.swiper-slide-inner {
+		position: relative;
+		.category {
+			position: absolute;
+			left: 12px;
+			right: 12px;
+			top: 12px;
+			z-index: 1;
+		}
+	}
+}
+
+.after-content-full-width-area{
+	.widget-carousel{
+		.post-thumbnail__link{
+			margin-bottom: 0;
+		}
+		.content-wrapper{
+			position: absolute;
+			bottom: 28px;
+			left: 28px;
+			z-index: 2;
+		}
+		.swiper-button-next,
+		.swiper-button-prev {
+			top: 50%;
+			width: 20px;
+			height: 20px;
+			background-color: transparent;
+			opacity: 1;
+			transition: .3s;
+			&:hover {
+				cursor: pointer;
+			}
+			i {
+				line-height: 20px;
+				font-size: 14px;
+			}
+		}
+		.swiper-button-prev,
+		.swiper-container.swiper-container-horizontal .swiper-button-prev {
+			left: 10px;
+		}
+	}
+	.posted-by{
+		display: inline-block;
+	}
+	.swiper-slide-inner{
+		&:before{
+			content: "";
+			position:absolute;
+			left:0;
+			right:0;
+			top:50%;
+			bottom:0;
+			display: inline-block;
+			z-index: 1;
+			transition: .3s;
+		}
+		.category{
+			left: 30px;
+			top: 30px;
+		}
+		&:hover {
+			&:before {
+				top: 20%;
+			}
+		}
+	}
+}

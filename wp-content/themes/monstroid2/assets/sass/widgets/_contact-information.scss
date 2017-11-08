@@ -1,0 +1,16 @@
+.contact-information-widget{
+	&__inner{
+		li{
+			margin-left:0;
+			.icon{
+				@include font-size(1.5);
+				line-height: 1;
+				margin-right: 13px;
+			}
+			&.contact-information__item--icon {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}

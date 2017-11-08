@@ -1,0 +1,20 @@
+p {
+	.single .post > .entry-content > &:first-of-type:first-letter{
+		font-size: inherit;
+		float: none;
+		border-radius: 0;
+		line-height: inherit;
+		padding: 0;
+		margin: 0;
+	}
+}
+body.single-post .post > .entry-content > p:first-of-type:first-letter {
+	background: none;
+	color: inherit;
+}
+
+@-moz-document url-prefix() {
+	.single .post > .entry-content > p:first-of-type:first-letter{
+		padding: 0;
+	}
+}

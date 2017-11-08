@@ -1,0 +1,17 @@
+.tm_pb_text h3{
+	@include before;
+}
+.tm_pb_text_align_left.tm_pb_text h3:before{
+	/*rtl:begin:ignore*/
+	left: 0;
+	transform: translateX(0);
+	/*rtl:end:ignore*/
+}
+
+.tm_pb_text_align_right.tm_pb_text h3:before{
+	/*rtl:begin:ignore*/
+	left: auto;
+	right: 0;
+	transform: translateX(0);
+	/*rtl:end:ignore*/
+}

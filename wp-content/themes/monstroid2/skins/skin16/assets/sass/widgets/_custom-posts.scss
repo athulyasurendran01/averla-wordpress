@@ -1,0 +1,16 @@
+.custom-posts {
+	.entry-content,
+	.entry-footer,
+	.entry-header {
+		> * {
+			margin-top: 10px;
+		}
+	}
+	.link {
+		margin-top: 20px;
+
+		i {
+			display: none;
+		}
+	}
+}

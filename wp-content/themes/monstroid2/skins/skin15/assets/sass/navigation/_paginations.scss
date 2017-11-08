@@ -1,0 +1,55 @@
+/*Post pagination*/
+.pagination {
+	padding: 70px 0 5px;
+	margin-bottom: 60px;
+	border-top: none;
+	.posts-list:not(.posts-list--default) + & {
+		text-align: center;
+	}
+	.nav-links{
+		text-align: center;
+		.linearicon-arrow-right, .linearicon-arrow-left{
+			display: inline-block;
+		}
+	}
+}
+.site-content .page-numbers,
+#tm_builder_outer_content .pagination .page-numbers,
+.tm-pg_front_gallery-navigation .tm_pg_nav-links a.tm_pg_page-numbers {
+	line-height: 1;
+	display: inline-block;
+	height: auto;
+	min-width: inherit;
+	margin: 0 25px 5px 0;
+	padding: 0 2px;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	font-weight: 500;
+
+	@include font-size(.875);
+	@include border-radius;
+
+	&.dots {}
+
+	&.next,
+	&.prev {
+		min-width: 30px;
+		border: none;
+		background: none;
+		i {
+			vertical-align: middle;
+			@include font-size(.875);
+		}
+	}
+}
+
+.site-content a.page-numbers:hover,
+.site-content .page-numbers.current,
+#tm_builder_outer_content .pagination a.page-numbers:hover,
+#tm_builder_outer_content .pagination .page-numbers.current,
+.tm-pg_front_gallery-navigation .tm_pg_nav-links a.tm_pg_page-numbers:hover,
+.tm-pg_front_gallery-navigation .tm_pg_nav-links a.tm_pg_page-numbers.current {
+	background-color: transparent;
+	border-color: $color__background-hr;
+}

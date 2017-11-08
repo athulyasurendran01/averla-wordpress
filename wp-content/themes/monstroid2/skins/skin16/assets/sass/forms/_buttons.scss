@@ -1,0 +1,11 @@
+.btn,
+.link,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	padding: $padding__buttons;
+	border-radius: $border-radius__fields;
+	letter-spacing: 0.04px;
+	border-width: 0;
+}

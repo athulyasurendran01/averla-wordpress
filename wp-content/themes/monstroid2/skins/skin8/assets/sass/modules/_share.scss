@@ -1,0 +1,30 @@
+.share-btns__link {
+	position: relative;
+
+	&:before {
+		display: inline-block;
+		content: '';
+		position: absolute;
+		bottom: -20px;
+		left: 50%;
+		transform: translateX(-50%) translateZ(0);
+		width: 30px;
+		height: 2px;
+		transition: .3s;
+		opacity: 0;
+	}
+
+	&:hover {
+		&:before {
+			bottom: -13px;
+			opacity: 1;
+		}
+	}
+}
+
+@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent){
+	.share-btns__link i:before{
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}

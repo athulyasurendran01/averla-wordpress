@@ -1,0 +1,19 @@
+#tm_builder_outer_content {
+	.tm_pb_counters.tm_pb_module {
+		.tm_pb_counter_amount,
+		.tm_pb_counter_title {
+			text-transform: uppercase;
+		}
+		.tm_pb_counter_container {
+			padding: 13px;
+			border-radius: $border-radius__fields;
+			margin-top: 5px;
+
+			.tm_pb_counter_amount {
+				padding-top: 12px;
+				padding-bottom: 11px;
+				border-radius: $border-radius__fields / 2;
+			}
+		}
+	}
+}

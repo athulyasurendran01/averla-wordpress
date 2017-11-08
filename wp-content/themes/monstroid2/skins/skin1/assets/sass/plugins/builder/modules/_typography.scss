@@ -1,0 +1,45 @@
+/*Builder Typography*/
+.tm_pb_text {
+	h4, h2, h6 {
+		@include before;
+	}
+	
+	* + h6:before{
+		display: none;
+	}
+
+	h4:before{
+		margin-bottom: 30px;
+	}
+
+	h6:before{
+		margin-bottom: 60px;
+	}
+
+	&.tm_pb_text_align_left {
+		h4:before,
+		h2:before,
+		h6:before {
+			margin-left: 0;
+		}
+	}
+	&.tm_pb_text_align_right {
+		h4:before,
+		h2:before,
+		h6:before {
+			margin-right: 0;
+		}
+	}
+}
+
+h6 + p {
+	margin-top: 14px;
+}
+
+h4 + h6 {
+	margin-top: 51px;
+}
+
+h2 + h6{
+	margin-top: 37px;
+}

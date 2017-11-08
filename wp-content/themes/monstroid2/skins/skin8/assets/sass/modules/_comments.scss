@@ -1,0 +1,11 @@
+.comments-area {
+	border: none;
+}
+
+div.comment-content-wrap {
+	padding: 0;
+	background-color: transparent;
+	&:before {
+		display: none;
+	}
+}

@@ -1,0 +1,19 @@
+/* Cherry-search loader */
+.cherry-search .cherry-search__spinner > div {
+	background-color: $regular_accent_color_1;
+}
+
+.cherry-search .cherry-search__item-author span,
+.cherry-search .cherry-search__item-author em {
+	font-style: $meta_font_style;
+	font-weight: $meta_font_weight;
+	font-size: $meta_font_size{px};
+	line-height: $meta_line_height;
+	font-family: @font_family( $meta_font_family );
+	letter-spacing: $meta_letter_spacing{em};
+}
+
+.cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item a,
+.invert .cherry-search-wrapper .cherry-search .cherry-search__results-list .cherry-search__results-item a {
+	color: $regular_text_color;
+}

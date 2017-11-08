@@ -1,0 +1,39 @@
+.site-header.style-7 {
+		z-index: 10;
+	.header-container {
+		@include media-breakpoint-up(md) {
+			padding: 17px 0;
+		}
+	}
+	.site-branding {
+		text-align: center;
+	}
+
+	#site-navigation.main-navigation {
+		margin: 0;
+		@include media-breakpoint-up(md) {
+			z-index: -1;
+		}
+	}
+
+	.header-btn-wrap {
+		text-align: center;
+		@include media-breakpoint-up(md) {
+			text-align: right;
+		}
+	}
+
+	.header-btn {
+		margin-top: 25px;
+		@include media-breakpoint-up(md) {
+			margin-top: 0;
+		}
+	}
+	#site-navigation.main-navigation.vertical-menu .close{
+		display: none;
+	}
+}
+
+#site-navigation.main-navigation.vertical-menu .main-navigation-buttons{
+	top: 20%;
+}

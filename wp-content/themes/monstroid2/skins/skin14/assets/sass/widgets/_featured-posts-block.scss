@@ -1,0 +1,42 @@
+div.widget-fpblock {
+	&__item:not(.widget-fpblock__container) {
+		position: relative;
+		&:hover{
+			.widget-fpblock__item-inner:before{
+				top:30%;
+			}
+		}
+	}
+	&__item-title {
+		text-transform: none;
+	}
+
+	&__item{
+		min-height: 346px;
+	}
+
+	&__item-inner{
+		background: transparent;
+		@include media-breakpoint-up(lg) {
+			padding-left: 27px;
+			padding-right: 27px;
+		}
+		.posted-by{
+			display: inline-block;
+		}
+		&:before{
+			content: "";
+			position:absolute;
+			left:0;
+			right:0;
+			top:70%;
+			bottom:0;
+			display: inline-block;
+			transition: .3s;
+			z-index: 0;
+		}
+		> *{
+			z-index: 1;
+		}
+	}
+}

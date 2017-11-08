@@ -1,0 +1,15 @@
+.footer-copyright{
+	color: $color__footer;
+	@include font-size(12/16);
+}
+.site-footer.style-2{
+	.site-info > *{
+		margin: 25px 0!important;
+	}
+	.footer-container {
+		padding: 30px 0;
+	}
+}
+.footer-container {
+	padding: 15px 0;
+}

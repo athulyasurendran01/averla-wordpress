@@ -1,0 +1,34 @@
+#tm_builder_outer_content {
+	.tm_pb_module.tm_pb_video_slider {
+		.tm-pb-slider-arrows {
+			.tm-pb-arrow {
+				&-prev,
+				&-next {
+					&:before {
+						@include nucleo-mini-icon;
+						font-size: 14px;
+						display: block;
+						line-height: 50px;
+					}
+				}
+
+				&-prev{
+					border-radius: 50%;
+
+					&:before {
+						content: '\e903';
+					}
+				}
+
+
+				&-next{
+					border-radius: 50%;
+
+					&:before {
+						content: '\e904';
+					}
+				}
+			}
+		}
+	}
+}

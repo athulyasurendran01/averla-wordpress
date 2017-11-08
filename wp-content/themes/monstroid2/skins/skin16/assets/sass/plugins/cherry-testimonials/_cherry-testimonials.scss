@@ -1,0 +1,56 @@
+.tm-testi--boxed {
+	blockquote {
+		border-radius: 30px;
+		border-color: $color_hr;
+
+		@include media-breakpoint-up(lg) {
+			padding-bottom: 64px;
+		}
+		&:before {
+			line-height: 44px;
+			margin: 0;
+		}
+		cite {
+			margin: 0 0 -6px;
+		}
+	}
+	.tm-testi__item-avatar {
+		margin: -15px auto 34px;
+	}
+	.tm-testi__item-body {
+		text-transform: none;
+
+		p {
+			margin-bottom: 15px;
+		}
+	}
+}
+.tm-testi {
+	.tm-testi__item-name {
+		text-transform: uppercase;
+	}
+	.tm-testi__item-position {
+		@include font-size(1);
+		font-style: italic;
+	}
+	.tm-testi-slider__pags.swiper-pagination {
+		margin-top: 44px;
+	}
+}
+.tm-testi-slider__pags {
+	.swiper-pagination-bullet {
+		background-color: $color_hr;
+	}
+}
+.tm-testi .swiper-button-next.tm-testi-slider__next::before,
+.tm-testi .swiper-button-prev.tm-testi-slider__prev::before {
+	@include nucleo-mini-icon;
+	font-size: 14px;
+	line-height: 50px;
+}
+.tm-testi .swiper-button-next.tm-testi-slider__next::before {
+	content: '\e904';
+}
+.tm-testi .swiper-button-prev.tm-testi-slider__prev::before {
+	content: '\e903';
+}

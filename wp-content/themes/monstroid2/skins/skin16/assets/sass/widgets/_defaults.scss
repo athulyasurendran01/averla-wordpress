@@ -1,0 +1,162 @@
+.widget_nav_menu,
+.widget_categories,
+.widget_pages {
+	ul {
+		li {
+			& + li {
+				padding-top: 8px;
+				margin-top: 12px;
+				border-top: 1px solid $color_hr;
+
+				.invert & {
+					border-color: $color_hr_invert;
+				}
+			}
+		}
+	}
+}
+
+.widget_categories {
+	.widget-title {
+		margin-bottom: 21px;
+	}
+}
+
+.widget_recent_entries,
+.widget_recent_comments {
+	.widget-title {
+		margin-bottom: 18px;
+	}
+	ul {
+		li {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+
+			& + li {
+				padding-top: 15px;
+				margin-top: 23px;
+				border-top: 1px solid $color_hr;
+
+				.invert & {
+					border-color: $color_hr_invert;
+				}
+			}
+			.post-date {
+				order: 1;
+				font-style: normal;
+			}
+			a {
+				order: 2;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.widget_recent_comments {
+	ul {
+		li {
+			display: block;
+			font-style: normal;
+		}
+	}
+}
+
+.widget_search {
+	.search-form {
+		position: relative;
+	}
+	.search-form__input-wrap {
+		.search-form__field {
+			padding-right: 60px;
+		}
+	}
+	.search-form__submit {
+		position: absolute;
+		top: 0;
+		right: 0;
+		text-indent: -9999em;
+		width: 49px;
+		height: 49px;
+
+		&:after {
+			@include nucleo-mini-icon;
+
+			content: '\ea66';
+			text-indent: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 49px;
+			height: 49px;
+			line-height: 49px;
+			font-size: 20px;
+		}
+	}
+
+	.cherry-search .search-form.cherry-search__form button.search-submit {
+		position: static;
+		text-indent: 0;
+		width: auto;
+		height: 49px;
+		padding: 5px;
+
+		&:after {
+			content: none;
+		}
+	}
+}
+
+.widget_tag_cloud {
+	.tagcloud a {
+		background: none;
+		border: none;
+		margin: 0 20px 0 0;
+		padding: 0;
+		text-transform: uppercase;
+	}
+}
+
+.widget_archive,
+.widget_categories {
+	select {
+		padding-left: 20px;
+		padding-right: 40px;
+		background-image: url("assets/images/down.png");
+		background-repeat: no-repeat;
+		background-position: calc(100% - 16px) 50%;
+		background-size: 9px 5px;
+
+		appearance: none;
+
+		@include media-breakpoint-up(md) {
+			width: 100%;
+		}
+	}
+
+	select::-ms-expand {
+		opacity: 0;
+	}
+}
+
+.widget_calendar {
+	.calendar_wrap {
+		th {
+			text-align: center;
+		}
+		tbody {
+			td {
+				line-height: 34px;
+			}
+			td:not(.pad) {
+				&,
+				#tm_builder_outer_content .tm_pb_widget_area &,
+				.invert & {
+					background: none;
+				}
+			}
+		}
+	}
+}

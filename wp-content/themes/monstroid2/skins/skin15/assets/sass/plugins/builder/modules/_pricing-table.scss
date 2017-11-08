@@ -1,0 +1,60 @@
+#tm_builder_outer_content {
+	.tm_pb_column_3_4 .tm_pb_pricing.tm_pb_module .tm_pb_pricing_table, .tm_pb_column_4_4 .tm_pb_pricing.tm_pb_module .tm_pb_pricing_table {
+		@include media-breakpoint-up(lg, $grid-breakpoints-old) {
+			flex: 0 0 calc(33.33% - #{$grid-gutter-width});
+			max-width: calc(33.33% - #{$grid-gutter-width});
+		}
+	}
+
+	.tm_pb_pricing.tm_pb_module {
+
+		.tm_pb_pricing {
+
+			&_table {
+				padding-bottom: 17px;
+				border: none;
+				padding-top: 0;
+			}
+
+			&_heading {
+				padding: 5px 0 15px;
+			}
+
+			&_content_top {
+				padding-left: 0;
+				padding-right: 0;
+				padding-bottom: 1px;
+				&:after {
+					display: none;
+				}
+
+				.tm_pb_dollar_sign,
+				.tm_pb_sum {
+					@include font-size(1.875);
+				}
+			}
+
+			&_content {
+				padding: 15px 30px 10px 0;
+				@include media-breakpoint-up(xl) {
+					padding: 15px 75px 35px 0;
+				}
+				@include font-size(1);
+				ul.tm_pb_pricing {
+					li{
+						padding: 0 0 11.5px;
+						line-height: 1.7;
+					}
+				}
+			}
+		}
+	}
+	.tm_pb_pricing_table{
+		text-align: left;
+	}
+	.tm_pb_pricing.tm_pb_module .tm_pb_pricing_table{
+		>*{
+			text-align: left;
+		}
+	}
+}

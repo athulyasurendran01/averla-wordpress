@@ -1,0 +1,9 @@
+.cherry-search form.cherry-search__form.search-form button.search-submit:before {
+	display: inline-block;
+}
+
+.cherry-search .cherry-search__more-button {
+	text-transform: capitalize;
+	@include font-size(1);
+	letter-spacing: 0;
+}

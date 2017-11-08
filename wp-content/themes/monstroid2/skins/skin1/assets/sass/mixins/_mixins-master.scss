@@ -1,0 +1,12 @@
+@import "../../../../../assets/sass/mixins/_mixins-master.scss";
+@mixin before{
+	&:before {
+		display: block;
+		width: 66px;
+		height: 2px;
+		content: '';
+		margin-bottom: 42px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

@@ -1,0 +1,49 @@
+.vertical-menu + * .site-logo {
+	padding-left: 14px;
+}
+
+.site-header .btn-default.header-btn {
+	border: none;
+	padding: 4px;
+	background-color: transparent;
+	@include font-size(0.75);
+	letter-spacing: 0;
+	font-weight: 600;
+	&:hover,
+	&:active {
+		background-color: transparent;
+		box-shadow: none;
+	}
+	&:before {
+		content: '\f007';
+		@include font-awesome-icon;
+		margin-right: 5px;
+	}
+
+}
+
+.site-header {
+	border-bottom: 2px solid;
+	.home & {
+		border: none;
+	}
+}
+
+.header-container__flex{
+	@include media-breakpoint-up(md) {
+		align-items: flex-start;
+	}
+}
+
+.header-btn.btn.btn-default{
+	align-self: center;
+}
+
+
+@import "header/layout-default";
+@import "header/layout-centered";
+@import "header/layout-modern";
+@import "header/layout-minimal";
+@import "header/layout-creative";
+@import "header/top-panel";
+@import "header/logo";

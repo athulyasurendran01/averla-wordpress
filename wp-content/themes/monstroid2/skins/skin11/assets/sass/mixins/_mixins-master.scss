@@ -1,0 +1,20 @@
+@import "../../../../../assets/sass/mixins/_mixins-master.scss";
+@mixin before{
+	display: flex;
+	flex-direction: column-reverse;
+	&:before {
+		display: block;
+		width: 66px;
+		height: 2px;
+		content: '';
+		margin-top: 22px;
+		margin-left: auto;
+		margin-right: auto;
+		.tm_pb_text_align_left & {
+			margin-left: 0;
+		}
+		.tm_pb_text_align_right & {
+			margin-right: 0;
+		}
+	}
+}

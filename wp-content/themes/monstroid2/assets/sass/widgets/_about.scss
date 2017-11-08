@@ -1,0 +1,16 @@
+.widget-about {
+	&__logo-img {
+		vertical-align: top;
+	}
+	&__content {
+		> *:first-child {
+			margin-top: 10px;
+		}
+	}
+	&__tagline {
+		@include font-size(.75);
+	}
+	&__social {
+		margin-top: 15px;
+	}
+}

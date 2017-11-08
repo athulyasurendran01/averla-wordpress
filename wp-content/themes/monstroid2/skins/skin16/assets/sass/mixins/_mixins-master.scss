@@ -1,0 +1,16 @@
+@import "../../../../../assets/sass/mixins/mixins-master";
+
+@mixin nucleo-mini-icon {
+	@extend %nucleo-mini-icon;
+}
+
+%nucleo-mini-icon {
+	display: inline-block;
+	font-family: 'Nucleo Mini';
+	line-height: 1;
+	speak: none;
+	text-transform: none;
+	/* Better Font Rendering */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

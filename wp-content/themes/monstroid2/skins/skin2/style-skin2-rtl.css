@@ -1,0 +1,956 @@
+/*!
+Skin Name: Skin 2
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Grid
+# Typography
+# Elements
+	## Lists
+	## Tables
+	## Preloader
+	## ToTop button
+# Forms
+# Navigation
+	## Links
+	## Top Menu
+	## Main Menu
+	## Footer Menu
+	## Paginations
+	## Breadcrumbs
+	## Social List
+# Modules
+	## Accessibility
+	## Alignments
+	## Clearings
+	## Comments
+	## Swiper
+	## Author Bio
+	## Share Buttons
+	## Magnific Popup
+# Components
+	## Card
+# Content
+	## Layout
+	## Header
+	## Posts and pages
+	## Post Formats
+	## Footer
+	## 404
+# Widgets
+	## Defaults
+	## About author
+	## About Monstroid2
+	## Banner
+	## Carousel
+	## Contact Information
+	## Custom Posts
+	## Featured Posts Block
+	## Instagram
+	## Image Grid
+	## News Smart Box
+	## Playlist Slider
+	## Smart Slider
+	## Subscribe
+	## Taxonomy Tiles
+# Media
+	## Captions
+	## Galleries
+	## Embeds
+# Plugins
+	## BuddyPress
+	## Events
+	## Booked
+	## Timeline
+	## Events Schedule
+	## Contact Form 7
+	## Power Builder
+	## Cherry Team Members
+	## Cherry Testimonials
+	## Cherry Project
+	## Mega menu
+# Woocommerce Part
+
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase; }
+	h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
+		margin-bottom: 0; }
+
+h1 {
+	margin: 0; }
+	#woo-main h1 {
+		margin-bottom: 15px; }
+		@media (min-width: 992px) {
+			#woo-main h1 {
+				margin-bottom: 35px; } }
+
+h2 {
+	margin: 0 0 15px; }
+
+h3 {
+	margin: 0 0 15px; }
+
+h4 {
+	margin: 0 0 20px; }
+
+h5 {
+	margin: 0 0 14px; }
+
+h6 {
+	margin: 0 0 7px; }
+
+p + h1,
+p + h2 {
+	margin-top: 28px; }
+
+p + h3 {
+	margin-top: 42px; }
+
+p + h4 {
+	margin-top: 45px; }
+
+p + h5 {
+	margin-top: 48px; }
+
+p + h6 {
+	margin-top: 50px; }
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+blockquote {
+	text-align: right;
+	position: relative;
+	padding-right: 29px;
+	text-transform: uppercase; }
+	@media (min-width: 544px) {
+		blockquote {
+			padding-right: 37px; } }
+	blockquote::before {
+		content: '';
+		position: absolute;
+		top: 12px;
+		bottom: 12px;
+		right: 0;
+		border-right-width: 4px;
+		border-right-style: solid; }
+	.tm-testi blockquote::before {
+		border: none; }
+	blockquote cite {
+		padding-bottom: 6px;
+		text-transform: capitalize;
+		letter-spacing: .2em; }
+	article blockquote cite {
+		font-size: 14px;
+		font-size: 0.875rem; }
+	.single .format-quote .entry-content blockquote {
+		padding: 0 29px 0 0; }
+		@media (min-width: 544px) {
+			.single .format-quote .entry-content blockquote {
+				padding: 0 37px 0 0; } }
+		.single .format-quote .entry-content blockquote > * {
+			max-width: none; }
+
+/*--------------------------------------------------------------
+## Lists
+--------------------------------------------------------------*/
+article .entry-content ol > li:before {
+	content: counter(li, decimal-leading-zero); }
+
+article .entry-content ul:not([class]) > li:before {
+	color: inherit; }
+
+/*--------------------------------------------------------------
+## Tables
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Preloader
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## ToTop button
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Buttons
+--------------------------------------------------------------*/
+.btn,
+.link,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
+.comment-form .submit,
+.wpcf7-submit,
+.post-password-form label + input,
+.cherry-search .cherry-search__more-button {
+	font-size: 14px;
+	font-size: 0.875rem;
+	text-transform: none;
+	letter-spacing: .2em; }
+
+.btn {
+	padding-top: 22px;
+	padding-bottom: 22px; }
+	.before-loop-area .btn,
+	.after-loop-area .btn,
+	.before-content-area .btn,
+	.after-content-area .btn,
+	.full-width-header-area .btn,
+	.after-content-full-width-area .btn,
+	.footer-area--fullwidth .btn,
+	.tm_pb_column_4_4 .btn {
+		padding-right: 49px;
+		padding-left: 49px; }
+
+/*--------------------------------------------------------------
+## Fields
+--------------------------------------------------------------*/
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+select,
+textarea {
+	line-height: 1.4167; }
+
+* + div.wpcf7 {
+	margin-top: 30px; }
+
+/*--------------------------------------------------------------
+## Search-form
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Comment-form
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Password-form
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+.entry-content > p > a {
+	text-decoration: underline; }
+
+/*--------------------------------------------------------------
+## Top Menu
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Main Menu
+--------------------------------------------------------------*/
+.main-navigation .menu li a {
+	letter-spacing: .2em; }
+
+.main-navigation .menu .sub-menu a {
+	font-size: 13px;
+	font-size: 0.8125rem; }
+
+/*--------------------------------------------------------------
+## Vertical menu
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Footer Menu
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Paginations
+--------------------------------------------------------------*/
+.post-navigation {
+	padding-top: 76px;
+	margin-bottom: 76px; }
+	.post-navigation .nav-links {
+		text-transform: uppercase; }
+
+/*--------------------------------------------------------------
+## Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+	padding: 10px 0; }
+	@media (min-width: 992px) {
+		.breadcrumbs {
+			padding: 22px 0; }
+			.site .breadcrumbs .container {
+				max-width: 100%; } }
+	.breadcrumbs__wrap {
+		margin: 0; }
+	.breadcrumbs__items {
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		text-align: center; }
+		.breadcrumbs__title + .breadcrumbs__items {
+			-ms-flex-preferred-size: auto;
+			flex-basis: auto; }
+	@media (max-width: 991px) {
+		.breadcrumbs .breadcrumbs__content, .breadcrumbs .breadcrumbs__item {
+			line-height: 1.2; } }
+	.breadcrumbs .page-title {
+		font-size: 18px;
+		font-size: 1.125rem; }
+
+/*--------------------------------------------------------------
+## Social List
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Toggle buttons
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Modules
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Accessibility
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Alignments
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Clearings
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@media (min-width: 544px) {
+	.comment .reply {
+		float: left; } }
+
+.comment .comment-reply-link {
+	font-size: 14px;
+	font-size: 0.875rem;
+	letter-spacing: .2em; }
+
+.comment .comment #cancel-comment-reply-link {
+	text-transform: none;
+	letter-spacing: .1em;
+	font-style: inherit; }
+
+/*--------------------------------------------------------------
+## Swiper
+--------------------------------------------------------------*/
+.swiper-button-next,
+.swiper-container.swiper-container-horizontal .swiper-button-next {
+	left: 16px; }
+	.widget-carousel .swiper-button-next, .widget-carousel
+	.swiper-container.swiper-container-horizontal .swiper-button-next {
+		left: 0; }
+
+.swiper-button-prev,
+.swiper-container.swiper-container-horizontal .swiper-button-prev {
+	right: 16px; }
+	.widget-carousel .swiper-button-prev, .widget-carousel
+	.swiper-container.swiper-container-horizontal .swiper-button-prev {
+		right: 0; }
+
+/*--------------------------------------------------------------
+## Suthor-bio
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Share
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Contact block
+--------------------------------------------------------------*/
+.contact-block a[href^="mailto:"] {
+	text-decoration: underline; }
+
+/*--------------------------------------------------------------
+## Magnific Popup
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+.site-main {
+	margin-bottom: 65px; }
+	@media (min-width: 992px) {
+		.site-main {
+			margin-bottom: 130px; } }
+
+/*--------------------------------------------------------------
+## Layout
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+.vertical-menu + * .site-logo {
+	padding-right: 14px; }
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.posts-list:not(.posts-list--default) + .pagination {
+	padding-top: 0;
+	border-top: 0; }
+
+@media (min-width: 992px) {
+	.posts-list .hentry {
+		margin-bottom: 58px; } }
+
+.post__date + .posted-by {
+	position: relative; }
+	.post__date + .posted-by::before {
+		content: '-';
+		position: absolute;
+		right: -4px; }
+
+.single .hentry:not(.related-posts) {
+	margin-bottom: 76px; }
+
+.single .hentry .entry-footer > *:first-child {
+	margin-top: 35px; }
+
+@media (min-width: 992px) {
+	.single-modern-header {
+		padding: 206px 0 220px; } }
+
+@media (min-width: 992px) {
+	.single-modern-header .entry-header {
+		margin-bottom: 22px; } }
+
+.single-modern-header .entry-header .posted-by {
+	text-transform: uppercase;
+	margin-bottom: 11px; }
+	.single-modern-header .entry-header .posted-by a:hover {
+		text-decoration: underline; }
+
+.single-modern-header div.entry-meta {
+	font-size: 14px;
+	font-size: 0.875rem; }
+	.single-modern-header div.entry-meta .linearicon {
+		font-size: 24px;
+		font-size: 1.5rem;
+		margin-left: 14px; }
+	.single-modern-header div.entry-meta a:hover {
+		text-decoration: underline; }
+
+.single-modern-header .share-btns__list {
+	margin-top: 54px; }
+	.single-modern-header .share-btns__list a:hover {
+		opacity: .5; }
+
+@media (max-width: 991px) {
+	.single-modern-header .entry-header .entry-title {
+		font-size: 18px;
+		font-size: 1.125rem; }
+	.single-modern-header .entry-header .posted-by {
+		font-size: 14px;
+		font-size: 0.875rem; }
+		.single-modern-header .entry-header .posted-by__avatar {
+			margin-bottom: 8px; }
+	.single-modern-header .share-btns__list {
+		margin-top: 25px; } }
+
+/*--------------------------------------------------------------
+### Sticky Post
+--------------------------------------------------------------*/
+.sticky__label {
+	margin-top: 6px; }
+	.posts-list--default .sticky__label {
+		margin-top: 12px; }
+
+/*--------------------------------------------------------------
+## Post Formats
+--------------------------------------------------------------*/
+.posts-list .format-audio .post-featured-content {
+	padding: 0; }
+
+.posts-list .format-quote .post-featured-content {
+	padding: 0; }
+	.posts-list .format-quote .post-featured-content blockquote {
+		max-width: 100%;
+		text-align: right; }
+
+.single .site-main .format-quote .entry-content blockquote {
+	background: transparent; }
+
+.posts-list .format-audio .post-featured-content, .posts-list
+.format-quote .post-featured-content {
+	background: transparent; }
+
+.post-format-link::before {
+	display: none; }
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+.site-footer {
+	padding-top: 28px; }
+	.site-footer .footer-container {
+		padding: 16px 0 21px; }
+		.site-footer .footer-container:first-child {
+			padding-top: 0; }
+
+.site-footer.centered .footer-container {
+	padding-top: 50px;
+	padding-bottom: 50px; }
+	.site-footer.centered .footer-container:first-child {
+		padding-top: 0; }
+
+/*--------------------------------------------------------------
+## 404
+--------------------------------------------------------------*/
+.not-found.error-404 {
+	margin: 48px 0 60px; }
+	@media (min-width: 768px) {
+		.not-found.error-404 {
+			margin: 98px 0 110px; } }
+	.not-found.error-404 p {
+		max-width: 620px;
+		margin-right: auto;
+		margin-left: auto; }
+	.not-found.error-404 h2 {
+		margin-bottom: 35px; }
+	.not-found.error-404 .btn {
+		margin-top: 56px; }
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Defaults
+--------------------------------------------------------------*/
+.after-content-area .widget:last-child,
+.after-content-full-width-area .widget:last-child {
+	margin-bottom: 28px; }
+
+.full-width-header-area .widget + .widget,
+.after-content-full-width-area .widget + .widget {
+	padding-top: 0;
+	border-top: none; }
+
+.widget_archive,
+.widget_categories {
+	letter-spacing: .2em; }
+	.widget_archive li a:hover,
+	#tm_builder_outer_content .widget_archive li a:hover,
+	.widget_categories li a:hover,
+	#tm_builder_outer_content
+	.widget_categories li a:hover {
+		text-decoration: underline; }
+
+.widget_calendar caption {
+	letter-spacing: .2em; }
+
+.widget_categories {
+	letter-spacing: .2em; }
+	.widget_categories li::after {
+		display: none; }
+
+.widget_tag_cloud .tagcloud {
+	margin-right: -3px;
+	margin-left: -3px; }
+	.widget_tag_cloud .tagcloud a {
+		margin-right: 3px;
+		margin-left: 3px; }
+
+.widget_recent_entries a,
+.widget_recent_comments a {
+	text-transform: uppercase; }
+
+.footer-area .widget_text p {
+	margin-bottom: 14px; }
+
+.footer-area .widget_text a[href^="mailto:"] {
+	text-decoration: underline; }
+
+/*--------------------------------------------------------------
+## About author
+--------------------------------------------------------------*/
+.widget-about-author .widget-title + .about-author {
+	margin-top: -5px; }
+
+.widget-about-author .about-author_avatar {
+	margin-bottom: 32px; }
+
+/*--------------------------------------------------------------
+## About Monstroid2
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Banner
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Carousel
+--------------------------------------------------------------*/
+.widget-carousel .inner {
+	position: relative; }
+	.widget-carousel .inner .content-wrapper {
+		position: absolute;
+		bottom: 0;
+		padding: 8px 20px; }
+		@media (min-width: 768px) {
+			.widget-carousel .inner .content-wrapper {
+				padding: 9% 40px; } }
+	.widget-carousel .inner .post-thumbnail__link {
+		margin-bottom: 0;
+		opacity: .6; }
+	.widget-carousel .inner .post__excerpt {
+		margin-top: .8em;
+		overflow: hidden; }
+		@media (max-width: 991px) {
+			.widget-carousel .inner .post__excerpt {
+				font-size: 14px;
+				font-size: 0.875rem; } }
+	.widget-carousel .inner .entry-title {
+		margin-bottom: 0;
+		overflow: hidden; }
+	.widget-carousel .inner .entry-title a:hover,
+	#tm_builder_outer_content .widget-carousel .inner .entry-title a:hover,
+	.widget-carousel .inner .entry-meta a:hover,
+	#tm_builder_outer_content
+	.widget-carousel .inner .entry-meta a:hover {
+		text-decoration: underline; }
+	.widget-carousel .inner .entry-footer {
+		transition: .3s all ease; }
+		.widget-carousel .inner .entry-footer .link {
+			margin-top: 0; }
+			.widget-carousel .inner .entry-footer .link i {
+				transition: .3s all ease; }
+			.widget-carousel .inner .entry-footer .link:hover i {
+				margin-right: 10px; }
+		@media (min-width: 768px) {
+			.widget-carousel .inner .entry-footer .link {
+				margin-top: 12px;
+				position: absolute;
+				opacity: 0; } }
+	@media (min-width: 768px) {
+		.widget-carousel .inner:hover .post-thumbnail__link {
+			opacity: .2; }
+		.widget-carousel .inner:hover .entry-footer {
+			padding-bottom: 16px; }
+			.widget-carousel .inner:hover .entry-footer .link {
+				opacity: 1; } }
+
+.widget-carousel .swiper-button-prev,
+.widget-carousel .swiper-button-next {
+	top: 50%;
+	transform: translateY(-50%); }
+	@media (max-width: 991px) {
+		.widget-carousel .swiper-button-prev,
+		.widget-carousel .swiper-button-next {
+			display: none !important; } }
+
+.full-width-header-area .widget-carousel,
+.after-content-full-width-area .widget-carousel {
+	padding-right: 0;
+	padding-left: 0; }
+
+/*--------------------------------------------------------------
+## Contact Information
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Custom Posts
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Featured Posts Block
+--------------------------------------------------------------*/
+.widget-smart-slider + .widget-fpblock {
+	border-top: none;
+	padding-top: 0;
+	margin-top: -70px; }
+
+.widget-fpblock__item-title a:hover,
+#tm_builder_outer_content .widget-fpblock__item-title a:hover,
+.widget-fpblock .entry-meta a:hover,
+#tm_builder_outer_content
+.widget-fpblock .entry-meta a:hover {
+	text-decoration: underline; }
+
+/*--------------------------------------------------------------
+## Instagram
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Image Grid
+--------------------------------------------------------------*/
+.widget-image-grid__title {
+	font-size: 16px;
+	font-size: 1rem;
+	max-width: 90%; }
+
+.widget-image-grid__content::before {
+	opacity: .8; }
+
+.widget-image-grid__terms a:hover,
+#tm_builder_outer_content .widget-image-grid__terms a:hover, .widget-image-grid__title a:hover,
+#tm_builder_outer_content .widget-image-grid__title a:hover {
+	text-decoration: underline; }
+
+/*--------------------------------------------------------------
+## News Smart Box
+--------------------------------------------------------------*/
+.widget-news-smart-box .link i {
+	transition: .3s all ease; }
+
+.widget-news-smart-box .link:hover i {
+	margin-right: 10px; }
+
+.widget-news-smart-box .news-smart-box__navigation-title, .widget-news-smart-box .news-smart-box__navigation-terms-list-item {
+	letter-spacing: .2em; }
+
+.widget-news-smart-box .news-smart-box__navigation-title {
+	text-transform: uppercase; }
+
+.widget-news-smart-box .news-smart-box__navigation-terms-list-item {
+	text-transform: none;
+	font-size: 14px;
+	font-size: 0.875rem; }
+	.widget-news-smart-box .news-smart-box__navigation-terms-list-item.is-active {
+		text-decoration: underline; }
+
+.widget-news-smart-box .layout_type_2 .full-type .entry-meta a:hover,
+#tm_builder_outer_content .widget-news-smart-box .layout_type_2 .full-type .entry-meta a:hover,
+.widget-news-smart-box .layout_type_2 .full-type .news-smart-box__item-title a:hover,
+#tm_builder_outer_content
+.widget-news-smart-box .layout_type_2 .full-type .news-smart-box__item-title a:hover {
+	text-decoration: underline; }
+
+/*--------------------------------------------------------------
+## Playlist Slider
+--------------------------------------------------------------*/
+.widget-playlist-slider .sp-selected .entry-meta a:hover,
+#tm_builder_outer_content .widget-playlist-slider .sp-selected .entry-meta a:hover,
+.widget-playlist-slider .sp-selected .title a:hover,
+#tm_builder_outer_content
+.widget-playlist-slider .sp-selected .title a:hover {
+	text-decoration: underline; }
+
+/*--------------------------------------------------------------
+## Smart Slider
+--------------------------------------------------------------*/
+.smart-slider__instance[data-title="true"] .sp-image-container:after,
+.smart-slider__instance[data-content="true"] .sp-image-container:after,
+.smart-slider__instance[data-more-btn="true"] .sp-image-container:after {
+	display: none; }
+.smart-slider__instance .sp-content-container {
+	max-width: 1354px;
+	text-align: left;
+	-ms-flex-align: start;
+	align-items: flex-start; }
+	@media (min-width: 1200px) {
+		.smart-slider__instance .sp-content-container {
+			width: 1354px; } }
+	@media (min-width: 1440px) {
+		.smart-slider__instance .sp-content-container {
+			right: auto;
+			left: 50%;
+			transform: translateX(-50%); } }
+	.smart-slider__instance .sp-content-container .sp-layer + .sp-more {
+		margin-top: 58px; }
+
+.smart-slider__instance h2.sp-title {
+	line-height: 1.83; }
+	@media (min-width: 768px) {
+		.smart-slider__instance h2.sp-title {
+			max-width: 65%; } }
+
+.smart-slider__instance .sp-arrows .sp-next-arrow {
+	right: 16px; }
+
+.smart-slider__instance .sp-arrows .sp-previous-arrow {
+	left: 16px; }
+
+@media (min-width: 768px) {
+	.smart-slider__instance[data-thumbnails-position="bottom"] .sp-content-container {
+		padding-left: 40px;
+		padding-right: 40px; } }
+@media (min-width: 992px) and (max-width: 1440px) {
+	.sp-slides-container .sp-mask,
+	.sp-slides-container .sp-image-container,
+	.sp-slides-container .smart-slider__item {
+		height: 100vh !important; }
+	.sp-slides-container .sp-title {
+		font-size: 5vh !important; }
+	.sp-slides-container .sp-more {
+		margin-top: 5vh !important; } }
+
+/*--------------------------------------------------------------
+## Subscribe
+--------------------------------------------------------------*/
+.subscribe-block__input-group {
+	-ms-flex-pack: center;
+	justify-content: center; }
+
+.subscribe-block__input-wrap {
+	max-width: 300px; }
+
+.subscribe-block__submit {
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto; }
+
+.subscribe-follow__custom-bg {
+	padding-top: 32px;
+	padding-bottom: 38px; }
+
+.before-loop-area .subscribe-follow__wrap,
+.after-loop-area .subscribe-follow__wrap {
+	text-align: center; }
+
+/*--------------------------------------------------------------
+## Taxonomy Tiles
+--------------------------------------------------------------*/
+.widget-taxonomy-tiles__title a:hover,
+#tm_builder_outer_content .widget-taxonomy-tiles__title a:hover {
+	text-decoration: underline; }
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## bbPress
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## BuddyPress
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Events
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Booked
+--------------------------------------------------------------*/
+/*-------------------------------------------------------------
+## Timeline
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Events Schedule
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Contact Form 7
+--------------------------------------------------------------*/
+/*-------------------------------------------------------------
+## Power Builder
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Misc
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Typography
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Accordion
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Audio
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Blog
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Blurb
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Brands Showcase
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Button
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Carousel
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Circle Counter
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Contact-form
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Countdown Timer
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Counters
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Icon
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Map
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Number Counter
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Person
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Posts
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Pricing Table
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Promo (Call to action)
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Sidebar
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Slider
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Social Media Follow
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Tabs
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Taxonomy
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Testimonial
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Toggle
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Video
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Video slider
+--------------------------------------------------------------*/
+/*-------------------------------------------------------------
+## Cherry Team Members
+--------------------------------------------------------------*/
+.cherry-team.team-wrap.template-grid-boxes .team-listing_content .team-listing_name a:hover {
+	text-decoration: underline; }
+
+/*-------------------------------------------------------------
+## Cherry Testimonials
+--------------------------------------------------------------*/
+/*-------------------------------------------------------------
+## Cherry Project
+--------------------------------------------------------------*/
+.cherry-projects-wrapper .project-meta a:hover,
+#tm_builder_outer_content .cherry-projects-wrapper .project-meta a:hover,
+.cherry-projects-wrapper .project-entry-title a:hover,
+#tm_builder_outer_content
+.cherry-projects-wrapper .project-entry-title a:hover {
+	text-decoration: underline;
+	color: inherit; }
+
+.cherry-projects-wrapper .project-media .hover-content .simple-icon:hover {
+	color: inherit; }
+
+/*-------------------------------------------------------------
+## Mega Menu
+--------------------------------------------------------------*/

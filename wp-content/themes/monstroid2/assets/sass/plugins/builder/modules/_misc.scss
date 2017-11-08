@@ -1,0 +1,62 @@
+// Row
+#tm_builder_outer_content .row.tm_pb_row_inner {
+	width: auto;
+}
+
+#tm_builder_outer_content .row.row-center {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+// Column
+#tm_builder_outer_content .tm_pb_column.column_middle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.row {
+	&.tm_pb_col_padding_reset {
+		margin-left: 0;
+		margin-right: 0;
+		>.tm_pb_column {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+	&.tm_pb_row_fullwidth {}
+}
+
+// Parallax
+#tm_builder_outer_content .tm_pb_section_parallax .tm_pb_parallax_css,
+#tm_builder_outer_content .tm_pb_slides .tm_parallax_bg.tm_pb_parallax_css {
+	@include media-breakpoint-between(xs, lg) {
+		background-attachment: scroll;
+	}
+}
+
+// FIX vertical align.
+#tm_builder_outer_content .tm_pb_text_align_center {
+	margin: 0 auto;
+}
+
+#tm_builder_outer_content .tm_pb_slider_with_overlay .tm_pb_slide_overlay_container {
+	z-index: 1;
+}
+
+// FIX section video bg on iphone
+#tm_builder_outer_content .tm_pb_section_video .tm_pb_section_video_bg {
+	.tm_mobile_device & {
+		display: none;
+	}
+}
+
+// FIX 5 columns layout in builder modules
+@each $breakpoint in map-keys($grid-breakpoints) {
+	.columns-#{$breakpoint}-5 .col-#{$breakpoint}-2 {
+		@include media-breakpoint-only($breakpoint) {
+			flex: 0 0 20%;
+			max-width: 20%;
+		}
+	}
+}

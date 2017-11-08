@@ -1,0 +1,13 @@
+.comment {
+	&-form {
+		&-comment,
+		&-author,
+		&-email,
+		&-url {
+			i {
+				top:10px;
+			}
+		}
+
+	}
+}

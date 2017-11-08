@@ -1,0 +1,304 @@
+.buddypress .activity-list > li .activity-content .activity-header a:hover,
+.buddypress #buddypress .activity-list > li .activity-comments ul li .acomment-meta a:hover,
+.buddypress #buddypress .activity-list > li .activity-content .activity-header a.activity-time-since,
+.buddypress #buddypress .activity-list > li .activity-comments ul li .activity-time-since span,
+.buddypress #buddypress .activity-list > li .activity-content .activity-inner .activity-read-more a:hover,
+.buddypress #buddypress .activity-list > li .activity-content .activity-meta > a,
+.buddypress #buddypress .activity-list > li .activity-content .activity-meta > a > span,
+.buddypress #buddypress .activity-list > li .acomment-options > a,
+.buddypress #buddypress #subnav.item-list-tabs ul li a:hover,
+.buddypress #buddypress .item-list-tabs.activity-type-tabs ul li a:hover,
+.buddypress #buddypress .item-list-tabs.activity-type-tabs ul li.selected a,
+.buddypress.members #buddypress #members-list li .item .activity-read-more a:hover,
+.buddypress.members #buddypress .action .friendship-button,
+.buddypress.groups #buddypress .action .friendship-button,
+.buddypress.groups #buddypress #groups-list li .action .group-button,
+.buddypress.groups #buddypress #group-create-tabs ul li span,
+.buddypress.groups #buddypress div#cover-image-container div#item-header-cover-image .group-button,
+.buddypress.groups #buddypress .item-list li .action .button,
+.buddypress.groups #buddypress #avatar-crop-actions a,
+.buddypress.groups #buddypress #bp-delete-avatar-container p a,
+.buddypress #buddypress #subnav.item-list-tabs ul li.selected a,
+.buddypress.groups #buddypress #group-settings-form .avatar-nav-items li a:hover,
+.buddypress.groups #buddypress a#bp-delete-cover-image,
+body.buddypress.bp-user #buddypress #profile-edit-form .field-visibility-settings-notoggle span,
+body.buddypress.bp-user #buddypress .avatar-nav-items li a,
+body.buddypress.bp-user #buddypress #item-buttons > div a,
+body.buddypress.bp-user #buddypress .action > div a,
+body.buddypress.bp-user #buddypress .bbp-forum-info .bbp-row-actions .subscription-toggle:hover,
+.buddypress.groups #buddypress .small a,
+.buddypress.groups #buddypress #group-create-body .avatar-nav-items li a:hover{
+	color: $regular_accent_color_1;
+}
+
+.buddypress .activity-list > li .activity-content .activity-header a,
+.buddypress #buddypress .activity-list > li .activity-comments ul li .acomment-meta a,
+.buddypress #buddypress .activity-list > li .activity-content .activity-header a.activity-time-since:hover,
+.buddypress #buddypress .activity-list > li .activity-comments ul li .activity-time-since:hover span,
+.buddypress #buddypress .activity-list > li .activity-content .activity-inner .activity-read-more a,
+.buddypress #buddypress .activity-list > li .activity-content .activity-meta > a:hover,
+.buddypress #buddypress .activity-list > li .activity-content .activity-meta > a:hover span,
+.buddypress #buddypress .activity-list > li .acomment-options > a:hover,
+.buddypress #buddypress #subnav.item-list-tabs ul li a,
+.buddypress #buddypress #subnav.item-list-tabs ul li.selected a span,
+.buddypress #buddypress #subnav.item-list-tabs ul li#activity-all a span,
+.buddypress #buddypress #subnav.item-list-tabs ul li#activity-filter-select label,
+.buddypress #buddypress #subnav.item-list-tabs ul li#members-personal a span,
+.buddypress #buddypress #subnav.item-list-tabs ul li#members-all a span,
+.buddypress #buddypress #subnav.item-list-tabs ul li#groups-personal a span,
+.buddypress #buddypress #subnav.item-list-tabs ul li#groups-all a span,
+.buddypress #buddypress #whats-new-form #whats-new-post-in-box,
+.buddypress #buddypress #subnav.item-list-tabs ul li#groups-order-select label{
+	color: $regular_accent_color_2;
+}
+
+.buddypress #buddypress div.item-list-tabs#subnav {
+	background-color: $regular_accent_color_3;
+}
+
+.buddypress #buddypress #subnav.item-list-tabs ul li.last select {
+	background-color: $invert_text_color;
+}
+
+.buddypress #buddypress #whats-new-form #whats-new-post-in-box select {
+	color: $regular_text_color;
+}
+
+.buddypress #buddypress #whats-new-form #whats-new-post-in-box,
+.buddypress #buddypress #subnav.item-list-tabs ul li.last label,
+.buddypress #buddypress .activity-list > li .activity-comments ul li .acomment-meta,
+.buddypress #buddypress .activity-list > li .activity-content .activity-header,
+.buddypress.groups #buddypress div#cover-image-container div#item-header-cover-image #item-meta span.highlight,
+.buddypress.groups #buddypress div#cover-image-container div#item-header-cover-image #item-meta span.activity,
+.buddypress.groups #buddypress #groups-list li .action .group-button,
+.buddypress.groups #buddypress #groups-list li .action .meta,
+.buddypress.members #buddypress .action .friendship-button,
+.buddypress.groups #buddypress .action .friendship-button,
+#profile-edit-form .field-visibility-settings-notoggle {
+	font-style: $meta_font_style;
+	font-weight: $meta_font_weight;
+}
+
+.buddypress #buddypress #whats-new-form #whats-new-submit input,
+.buddypress.members #buddypress #members-dir-search #search-members-form #members_search_submit,
+.buddypress #buddypress #group-dir-search #search-groups-form #groups_search_submit {
+	background-color: $regular_accent_color_1;
+	color: $invert_text_color;
+}
+
+.buddypress #buddypress #whats-new-form #whats-new-submit input:hover {
+	background-color: $regular_accent_color_2
+}
+
+.buddypress #buddypress .item-list-tabs.activity-type-tabs ul li a {
+	color: $regular_accent_color_2;
+}
+
+.buddypress #buddypress .item-list-tabs.activity-type-tabs ul li a span {
+	color: $regular_accent_color_2;
+	border-color: $regular_accent_color_1;
+}
+
+.buddypress.members #buddypress #members-dir-search #search-members-form #members_search,
+.buddypress #buddypress #group-dir-search #search-groups-form #groups_search{
+	background-color: $regular_accent_color_3;
+	border-color: $regular_accent_color_3;
+}
+
+.buddypress.members #buddypress #members-dir-search #search-members-form #members_search_submit:hover,
+.buddypress #buddypress #group-dir-search #search-groups-form #groups_search_submit:hover {
+	background-color: $regular_accent_color_2;
+}
+
+.buddypress #buddypress #subnav.item-list-tabs ul li#members-order-select select#members-order-by {
+	background-color: $invert_text_color;
+}
+
+.buddypress #buddypress #subnav.item-list-tabs ul li.last label,
+.buddypress.members #buddypress #members-list li .item .activity-read-more a,
+.buddypress.members #buddypress .action .friendship-button:hover,
+.buddypress.groups #buddypress .action .friendship-button:hover,
+.buddypress.groups #buddypress #groups-list li .action .group-button:hover,
+.buddypress.groups #buddypress #group-create-tabs ul li.current a,
+.buddypress.groups #buddypress #message.bp-template-notice p,
+.buddypress.groups #buddypress #group-create-body label,
+.buddypress.groups #buddypress .warning,
+.buddypress.groups #buddypress .radio > ul li,
+.buddypress.groups #buddypress div#cover-image-container div#item-header-cover-image .group-button:hover,
+.buddypress.groups #buddypress div#cover-image-container div#item-header-cover-image #item-meta span.highlight{
+	color: $regular_accent_color_2;
+}
+
+.buddypress.members #buddypress #members-list li .item-title span,
+.buddypress.members #buddypress #members-list li .item-title .update,
+.buddypress.groups #buddypress #groups-list li .item-desc,
+.buddypress.groups #buddypress #groups-list li .item-meta,
+.buddypress.groups #buddypress #groups-list li .action .meta,
+.buddypress.groups #buddypress div#cover-image-container div#item-header-cover-image #item-meta p,
+.buddypress.groups #buddypress div#cover-image-container div#item-header-cover-image #item-meta span.activity {
+	color: $regular_text_color;
+}
+
+.buddypress.groups #buddypress #group-create-body input[type^="button"],
+.buddypress.groups #buddypress #group-create-body input[type^="submit"] {
+	background-color: $regular_accent_color_1;
+	color: $invert_link_color;
+}
+
+.buddypress.groups #buddypress #group-create-body input[type^="button"]:hover,
+.buddypress.groups #buddypress #group-create-body input[type^="submit"]:hover,
+.buddypress.groups #buddypress #subnav li.groups-members-search #search-members-form #members_search_submit:hover,
+.buddypress.groups #buddypress input[type^="submit"]:hover{
+	background-color: $regular_accent_color_2;
+}
+
+.buddypress #buddypress #object-nav.item-list-tabs ul li a span {
+	border-color: $regular_accent_color_1;
+	color: $regular_accent_color_2;
+}
+
+.buddypress.groups #buddypress #subnav li.groups-members-search #search-members-form #members_search {
+	background-color: $invert_text_color !important;
+}
+
+.buddypress.groups #buddypress #subnav li.groups-members-search #search-members-form #members_search_submit,
+.buddypress.groups #buddypress input[type^="submit"] {
+	background-color: $regular_accent_color_1;
+	color: $invert_text_color;
+}
+
+.buddypress.groups #buddypress .item-list li .action .button:hover,
+#buddypress #message.info,
+.buddypress.groups #buddypress #group-settings-form label,
+.buddypress.groups #buddypress #group-settings-form .avatar-nav-items li a,
+.buddypress.groups #buddypress #avatar-crop-actions a:hover,
+.buddypress.groups #buddypress #bp-delete-avatar-container p a:hover,
+.buddypress.groups #buddypress a#bp-delete-cover-image:hover,
+.buddypress.groups #buddypress #group-settings-form #message.info p,
+.buddypress #buddypress #object-nav.item-list-tabs ul li.selected a,
+body.buddypress.bp-user #buddypress .profile-fields .label,
+body.buddypress.bp-user #buddypress label,
+body.buddypress.bp-user #buddypress #profile-edit-form .field-visibility-settings-notoggle,
+body.buddypress.bp-user #buddypress .avatar-nav-items li a:hover,
+body.buddypress.bp-user #buddypress .avatar-nav-items li.current a,
+body.buddypress.bp-user #buddypress #notifications-bulk-management table thead tr th,
+body.buddypress.bp-user #buddypress #messages-bulk-management table thead tr th,
+body.buddypress.bp-user #buddypress #item-buttons > div a:hover,
+body.buddypress.bp-user #buddypress .action > div a:hover,
+body.buddypress.bp-user #buddypress #message-thread #send-reply .avatar-box,
+body.buddypress.bp-user #buddypress .bbp-forum-info .bbp-row-actions .subscription-toggle,
+body.buddypress.bp-user #buddypress #settings-form table thead tr th,
+.buddypress.groups #buddypress .small a:hover,
+.buddypress.widget .item-options .selected,
+.widget.buddypress #bp-login-widget-form label{
+	color: $regular_accent_color_2;
+}
+
+.buddypress.groups #buddypress #group-settings-form textarea:focus {
+	border-color: $regular_accent_color_3;
+}
+
+.buddypress.groups #buddypress #group-settings-form #save {
+	color: $invert_text_color;
+}
+
+.buddypress #buddypress input:focus {
+	border-color: $regular_accent_color_3 !important;
+}
+
+.buddypress.groups #buddypress #group-settings-form p:not(.warning) {
+	color: $regular_text_color;
+}
+
+.buddypress.groups #buddypress #group-settings-form #bp-browse-button,
+body.buddypress.bp-user #buddypress input[type='submit'],
+body.buddypress.bp-user #buddypress input[type='button'],
+body.buddypress.bp-user #buddypress a.button.edit,
+body.buddypress.bp-user #buddypress a.button.confirm:not(.item-button),
+body.buddypress.bp-user #buddypress a.button.reject,
+body.buddypress.bp-user #buddypress a.button.accept{
+	background-color: $regular_accent_color_1;
+	color: $invert_text_color;
+}
+
+.buddypress.groups #buddypress #group-settings-form #bp-browse-button:hover,
+body.buddypress.bp-user #buddypress input[type='submit']:hover,
+body.buddypress.bp-user #buddypress input[type='button']:hover,
+body.buddypress.bp-user #buddypress a.button.reject:hover,
+body.buddypress.bp-user #buddypress a.button.accept:hover,
+body.buddypress.bp-user #buddypress a.button.edit:hover,
+body.buddypress.bp-user #buddypress a.button.confirm:not(.item-button):hover{
+	background-color: $regular_accent_color_2;
+}
+
+.bp-avatar-nav ul,
+.bp-avatar-nav ul.avatar-nav-items li.current {
+	border-color: $regular_accent_color_3;
+}
+
+.buddypress.groups #buddypress input[type^="submit"] {
+	color: $invert_text_color !important;
+}
+
+.buddypress.bp-user #buddypress #item-meta #latest-update,
+body.buddypress.bp-user #buddypress .update,
+body.buddypress.bp-user #buddypress #settings-form p{
+	color: $regular_text_color;
+}
+
+body.buddypress.bp-user #buddypress #notifications-bulk-management table tr td,
+body.buddypress.bp-user #buddypress #messages-bulk-management table tr td {
+	border-color: $regular_accent_color_3;
+}
+
+body.buddypress.bp-user #buddypress #message-thread .message-box:nth-child(even) {
+	background-color: $regular_accent_color_3;
+}
+
+body.buddypress.bp-user #buddypress div.message-search #messages_search {
+	background-color: $invert_text_color;
+}
+
+body.buddypress.bp-user #buddypress #settings-form table tr td,
+body.buddypress.bp-user #buddypress #settings-form table tr th {
+	border-color: $regular_accent_color_3;
+}
+
+.buddypress #buddypress .activity-list > li.load-more a {
+	color: $invert_text_color;
+	background-color: $regular_accent_color_2;
+}
+
+.buddypress #buddypress .activity-list > li.load-more a:hover,
+div.bp-avatar-status .bp-bar, div.bp-cover-image-status .bp-bar{
+	background-color: $regular_accent_color_1;
+}
+
+.buddypress #buddypress .item-list-tabs#subnav ul li a span,
+.buddypress #buddypress .item-list-tabs#subnav ul li a span:hover {
+	background-color: $invert_text_color;
+}
+
+.buddypress.widget .item-options {
+	color: $regular_accent_color_3;
+}
+
+body.buddypress.bp-user #buddypress input[type='submit'],
+body.buddypress.bp-user #buddypress input[type='submit']:hover{
+	color: $invert_text_color;
+}
+
+.buddypress #buddypress #whats-new-form #whats-new-textarea textarea {
+	background-color: $regular_accent_color_3;
+}
+
+.buddypress #buddypress #message.bp-template-notice p,
+.buddypress #buddypress .warning,
+.buddypress #buddypress .bp-avatar-status p,
+.buddypress #buddypress .bp-uploader-progress p,
+.buddypress #buddypress .bp-cover-image-status p,
+.buddypress #buddypress #message p,
+.buddypress #buddypress #bp-avatar-status p {
+	font-weight: $meta_font_weight;
+	font-style: $meta_font_style;
+}

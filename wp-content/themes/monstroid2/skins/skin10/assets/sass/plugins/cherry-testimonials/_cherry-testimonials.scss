@@ -1,0 +1,12 @@
+.tm-testi--speech-bubble {
+	.tm-testi__item-body {
+		@include media-breakpoint-up(md) {
+			padding-right: 60px;
+		}
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+// Rooms widget
+#tm_builder_outer_content .tm_pb_column_4_4 .tm_pb_widget_area,
+.full-width-header-area,
+.after-content-full-width-area {
+	.widget_mphb_rooms_widget.widget {
+		.mphb_widget_rooms-wrapper {
+			margin-left: $grid-gutter-width / -2;
+			margin-right: $grid-gutter-width / -2;
+
+			.mphb-room-type {
+				padding-left: $grid-gutter-width / 2;
+				padding-right: $grid-gutter-width / 2;
+			}
+		}
+	}
+}

@@ -1,0 +1,114 @@
+#tribe-bar-form input::-webkit-input-placeholder,
+#tribe-bar-form input::-moz-placeholder,
+#tribe-bar-form input:-moz-placeholder,
+#tribe-bar-form input:-ms-input-placeholder,
+#tribe-events #tribe-bar-form #tribe-bar-views .tribe-bar-views-inner .tribe-bar-views-list li a span,
+#tribe-events #tribe-events-content .tribe-events-calendar thead tr th,
+#tribe-events #tribe-events-content .hentry .tribe-events-tooltip .tribe-event-description,
+#tribe-events #tribe-events-content .tribe-events-loop .tribe-events-venue-details span,
+#tribe-events #tribe-events-content .tribe-events-loop .tribe-events-venue-details address,
+#tribe-events #tribe-events-content .tribe-events-loop .tribe-events-list-event-description p,
+.single-tribe_events .tribe-events-schedule .tribe-events-cost,
+.single-tribe_events #tribe-events-content .tribe-events-event-meta .tribe-events-meta-group dl {
+	color: $regular_text_color;
+}
+#tribe-events #tribe-bar-form #tribe-bar-collapse-toggle {
+	background-color: $regular_accent_color_3;
+	color: $regular_accent_color_2;
+}
+#tribe-events #tribe-bar-form #tribe-bar-views .tribe-bar-views-inner .tribe-bar-views-list li a span::before,
+#tribe-events #tribe-events-content .hentry .tribe-events-month-event-title a,
+#tribe-events #tribe-events-content .hentry .tribe-events-tooltip .tribe-event-duration,
+#tribe-events #tribe-events-content .tribe-events-calendar tbody tr td.tribe-events-has-events > .hentry:after,
+#tribe-events #tribe-events-content .tribe-events-sub-nav li.tribe-events-nav-next a,
+#tribe-events #tribe-events-content .tribe-events-loop .tribe-event-schedule-details span,
+#tribe-events-content .tribe-updated,
+.single-tribe_events .tribe-events-schedule h6,
+#tribe-events #tribe-events-content .tribe-events-loop .tribe-events-list-separator-month span,
+#tribe-events #tribe-events-content .tribe-events-loop .tribe-events-read-more:hover,
+.tribe-events-list-widget .tribe-event-duration,
+#tribe-events #tribe-bar-form #tribe-bar-views.tribe-bar-views-open .tribe-bar-views-inner .tribe-bar-views-list li:hover a span,
+#tribe-mobile-container .tribe-events-event-schedule-details,
+#tribe-mobile-container .tribe-events-event-body .tribe-events-read-more:hover,
+.tribe-events-list-widget .tribe-events-widget-link a:hover {
+	color: $regular_accent_color_1;
+}
+#tribe-events #tribe-bar-form #tribe-bar-views .tribe-bar-views-inner .tribe-bar-views-list,
+#tribe-events #tribe-events-content .tribe-events-calendar tbody tr td.present {
+	background-color: $invert_text_color;
+}
+#tribe-events #tribe-bar-form .tribe-bar-filters .tribe-bar-filters-inner #tribe-bar-date,
+#tribe-events #tribe-bar-form .tribe-bar-filters .tribe-bar-filters-inner #tribe-bar-search {
+	background-color: $regular_accent_color_3;
+}
+#tribe-events #tribe-bar-form .tribe-bar-submit input[type=submit] {
+	background-color: $regular_accent_color_1;
+	color: $invert_text_color;
+}
+#tribe-events #tribe-bar-form .tribe-bar-submit input[type=submit]:hover,
+#tribe-events .tribe-events-button {
+	background-color: $regular_accent_color_2;
+}
+#tribe-events #tribe-bar-form label,
+#tribe-events #tribe-events-content .hentry .tribe-events-month-event-title:hover a,
+#tribe-events #tribe-events-content .hentry .tribe-events-tooltip .entry-title,
+#tribe-events #tribe-events-content .tribe-events-sub-nav li.tribe-events-nav-next a:hover,
+#tribe-events .tribe-events-notices,
+#tribe-events #tribe-events-content .tribe-events-loop .tribe-events-read-more,
+.single-tribe_events #tribe-events-content .tribe-events-cost,
+#tribe-mobile-container .tribe-events-event-body .tribe-events-read-more,
+.tribe-events-list-widget .tribe-events-widget-link a {
+	color: $regular_accent_color_2;
+}
+#tribe-events #tribe-events-content .tribe-events-calendar tbody tr td > div:first-child,
+#tribe-events #tribe-events-content .tribe-events-calendar tbody tr td > div:first-child a {
+	background-color: $regular_accent_color_3;
+	color: @alpha($regular_text_color, 50%);
+}
+#tribe-events #tribe-events-content .tribe-events-calendar tbody tr td.tribe-events-othermonth > div:first-child,
+#tribe-events #tribe-events-content .tribe-events-calendar tbody tr td.tribe-events-othermonth > div:first-child a,
+#tribe-events #tribe-events-content .tribe-events-calendar tbody tr td.tribe-events-othermonth:hover > div:first-child,
+#tribe-events #tribe-events-content .tribe-events-calendar tbody tr td.tribe-events-othermonth:hover > div:first-child a {
+	background-color: $regular_accent_color_3;
+	color: @alpha($regular_text_color, 20%);
+}
+#tribe-events #tribe-events-content .tribe-events-calendar tbody tr td:hover > div:first-child,
+#tribe-events #tribe-events-content .tribe-events-calendar tbody tr td:hover > div:first-child a,
+.datepicker table tr td span:hover,
+body .datepicker.dropdown-menu .table-condensed tr th:hover,
+body .datepicker.dropdown-menu table tr td.day:hover {
+	background-color: $regular_accent_color_1;
+	color: $invert_text_color;
+}
+#tribe-events #tribe-events-content .tribe-events-loop .tribe-event-schedule-details {
+	font-style: $meta_font_style;
+	font-weight: $meta_font_weight;
+}
+#tribe-events #tribe-events-content .tribe-events-loop .tribe-events-event-cost span {
+	color: $regular_accent_color_2;
+	font-style: $meta_font_style;
+	font-weight: $meta_font_weight;
+}
+#tribe-events #tribe-events-content .tribe-events-page-title {
+	font-family: @font_family($h3_font_family);
+	font-size: @font_size($h3_font_size, multiple, ceil, 1) px;
+	font-style: $h3_font_style;
+	font-weight: $h3_font_weight;
+	line-height: $h3_line_height;
+}
+#tribe-events .tribe-events-button:hover,
+#tribe-events .tribe-events-day-time-slot h5 {
+	background-color: $regular_accent_color_1;
+}
+.datepicker table tr td span,
+.datepicker table tr td,
+body .datepicker.dropdown-menu .table-condensed tr th {
+	font-family: @font_family($body_font_family);
+}
+.single-tribe_events #tribe-events #tribe-events-content .tribe-events-event-meta .tribe-events-meta-group dl dt,
+.single-tribe_events #tribe-events #tribe-events-content .tribe-events-event-meta .tribe-events-meta-group dl dd {
+	font-weight: $meta_font_weight;
+}
+.tribe-events-ajax-loading.tribe-events-active-spinner {
+	background-color: @alpha($regular_accent_color_1, 70%);
+}

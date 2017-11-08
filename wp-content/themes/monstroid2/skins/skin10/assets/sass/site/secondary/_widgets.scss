@@ -1,0 +1,15 @@
+.after-content-full-width-area {
+	padding-top: 84px;
+	padding-bottom: 34px;
+	.widget:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.after-content-full-width-area,
+.full-width-header-area,
+.tm_pb_column_4_4 {
+	.widget-title {
+		margin-bottom: 1em;
+	}
+}

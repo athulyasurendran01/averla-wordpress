@@ -1,0 +1,181 @@
+.projects-filters {
+	#tm_builder_outer_content .cherry-projects-wrapper &,
+	.cherry-projects-wrapper & {
+		justify-content: flex-start;
+
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 40px;
+		}
+	}
+	ul.projects-filters-list {
+		li {
+			span {
+				font-weight: bolder;
+			}
+		}
+	}
+}
+.cherry-projects-wrapper {
+	.projects-item-instance {
+		.simple-icon {
+			width: 30px;
+			height: 30px;
+			border-radius: 0;
+			margin: 5px;
+		}
+		.hover-content {
+			.zoom-link,
+			.external-link,
+			.permalink {
+				span {
+					@include nucleo-mini-icon;
+					font-size: 20px;
+					line-height: 30px;
+				}
+			}
+			.zoom-link {
+				span:before {
+					content: '\ea27';
+				}
+			}
+			.external-link {
+				span:before {
+					content: '\ee27';
+				}
+			}
+			.permalink {
+				span:before {
+					content: '\ea93';
+				}
+			}
+		}
+		.project-media {
+			& + .project-content {
+				margin-top: 22px;
+			}
+		}
+		.project-entry-title {
+			margin-bottom: 13px;
+		}
+	}
+}
+.project-more-button {
+	i {
+		display: none;
+	}
+}
+
+.cherry-projects-wrapper {
+	.projects-pagination {
+		justify-content: flex-start;
+
+		@include media-breakpoint-up(lg) {
+			margin: 47px 0;
+		}
+
+		ul.page-link {
+			li {
+				padding: 0;
+				border: none;
+				width: auto;
+				height: auto;
+				min-width: inherit;
+				margin-right: 11px;
+
+				&,
+				#tm_builder_outer_content & {
+					background: none;
+				}
+				span {
+					line-height: 1.2;
+				}
+			}
+
+			& + .page-navigation {
+				span {
+					margin-left: 0;
+				}
+			}
+		}
+		.page-navigation {
+			span {
+				padding: 0;
+				border: none;
+				width: auto;
+				height: auto;
+				min-width: inherit;
+				line-height: 1.2;
+			}
+		}
+	}
+}
+
+.cherry-projects-single {
+	.cherry-projects-single-details-list {
+		h4 {
+			margin-top: 20px;
+			padding: 0;
+			border: none;
+		}
+		ul {
+			li {
+				& + li {
+					margin-top: 25px;
+				}
+				span {
+					text-transform: uppercase;
+					display: block;
+					line-height: 1.2;
+					margin-bottom: 3px;
+				}
+			}
+		}
+	}
+	.cherry-projects-single__header {
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 75px;
+		}
+	}
+	.post-terms a {
+		text-transform: uppercase;
+	}
+	.project-entry-title {
+		text-align: center;
+		margin-bottom: 24px;
+	}
+	.entry-meta-header {
+		margin-bottom: 26px;
+	}
+	.share-btns__list {
+		margin-top: 45px;
+	}
+}
+
+.cherry-projects-wrapper .projects-ajax-button-wrapper .projects-ajax-button {
+	span {
+		padding: $padding__buttons;
+		border-radius: $border-radius__fields;
+		letter-spacing: 0.04;
+		border-width: 0;
+	}
+}
+
+.cherry-projects-single .cherry-projects-single-skills-list {
+	.cherry-skill-item {
+		.skill-label {
+			text-transform: uppercase;
+		}
+		.skill-bar {
+			padding: 13px;
+			border-radius: $border-radius__fields;
+			margin-top: 5px;
+			background-color: $color_gray;
+
+			span {
+				padding-top: 12px;
+				padding-bottom: 11px;
+				border-radius: $border-radius__fields / 2;
+			}
+		}
+	}
+}

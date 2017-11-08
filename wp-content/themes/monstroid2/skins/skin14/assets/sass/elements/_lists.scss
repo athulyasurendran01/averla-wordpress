@@ -1,0 +1,14 @@
+article .entry-content {
+	ol >li:before {
+		content: counter(li, decimal-leading-zero);
+	}
+	ul:not([class]) > li:before {
+		color: inherit;
+	}
+}
+
+.inline-list{
+	li + li{
+		margin-left: 10px;
+	}
+}

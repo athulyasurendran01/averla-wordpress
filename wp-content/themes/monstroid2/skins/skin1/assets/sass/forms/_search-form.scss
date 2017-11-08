@@ -1,0 +1,16 @@
+.search-form {
+	&__field[type='search'],
+	.cherry-search__field.search-field[type="search"]{
+		.site-header & {
+			@include font-size(1);
+		}
+	}
+
+	&__submit,
+	.cherry-search &.cherry-search__form button.search-submit{
+		.site-header &,
+		.site-header .invert &{
+			align-self: center;
+		}
+	}
+}

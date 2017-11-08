@@ -1,0 +1,14 @@
+body.tm_pb_builder #tm_builder_outer_content {
+	.bg-image-md-hide {
+		@include media-breakpoint-down(md) {
+			background-image: none;
+		}
+	}
+	.bg-image-sm-hide {
+		@include media-breakpoint-down(sm) {
+			background-image: none;
+		}
+	}
+}
+
+

@@ -1,0 +1,427 @@
+/* Rooms type shortcode & search results */
+.mphb-room-types,
+.mphb_sc_search_results-wrapper {
+	.mphb-room-type {
+		div[id^="mphb-gallery-slider"] {
+
+			@include media-breakpoint-up(lg) {
+				padding-right: $grid-gutter-width / 2;
+			}
+		}
+		.mphb-gallery-slider {
+			@include image-border-pseudo();
+		}
+		.mphb-room-type__content {
+
+			@include media-breakpoint-up(lg) {
+				padding-left: $grid-gutter-width / 2;
+			}
+		}
+	}
+}
+
+/* Search results */
+.mphb_sc_search_results-wrapper {
+	.mphb-room-type {
+		& + .mphb-room-type {
+			border-top: 1px solid $color__background-hr;
+		}
+	}
+}
+
+/* Rooms types */
+.mphb-room-types {
+	.mphb-room-type {
+		&:nth-child(even) {
+			&:after {
+				background-color: $color__lighter-gray;
+			}
+			div[id^="mphb-gallery-slider"] {
+				@include media-breakpoint-up(lg) {
+					padding-left: $grid-gutter-width / 2;
+				}
+			}
+			.mphb-room-type__content {
+				@include media-breakpoint-up(lg) {
+					padding-right: $grid-gutter-width / 2;
+				}
+			}
+			.mphb-gallery-slider:after {
+				border-color: $color__white;
+			}
+		}
+	}
+}
+
+/* Room type shortcode */
+.mphb_sc_room-wrapper {
+	.mphb-room-type {
+
+		.post-thumbnail,
+		.mphb-room-type-gallery {
+			@include image-border-pseudo();
+		}
+		.mphb-gallery-slider {
+			background-color: $color__lighter-gray;
+		}
+		.mphb-room-type-title {
+
+			& + p + .mphb-price-wrapper {
+				margin-top: -.49em;
+			}
+		}
+	}
+}
+
+.mphb-price {
+	&-wrapper {
+
+		h4 + &,
+		h4 + .mphb-price {
+			margin-top: -.49em;
+		}
+	}
+}
+
+// Services shortcode
+.mphb_sc_services-wrapper {
+	.mphb_room_service {
+		> * {
+			&:first-child {
+				@include media-breakpoint-up(lg) {
+					padding: 0 $grid-gutter-width / 2 0 0;
+				}
+			}
+			&:last-child {
+				@include media-breakpoint-up(lg) {
+					padding: 0 0 0 $grid-gutter-width / 2;
+				}
+			}
+		}
+		&:nth-child(4n+2),
+		&:nth-child(4n+4) {
+			.mphb-loop-service-thumbnail {
+				#tm_builder_outer_content .tm_pb_module & img,
+				img {
+					border-color: white;
+				}
+			}
+			&:before {
+				background-color: $color__lighter-gray;
+			}
+		}
+		&:nth-child(4n+2),
+		&:nth-child(4n+4) {
+			@include media-breakpoint-up(xl, $grid-breakpoints-old) {
+				> * {
+					&:first-child {
+						padding: 0 0 0 $grid-gutter-width / 2;
+					}
+					&:last-child {
+						padding: 0 $grid-gutter-width / 2 0 0;
+					}
+				}
+				.entry-content #tm_builder_outer_content .tm_pb_module & {
+					img {
+						border-color: $color__white;
+					}
+				}
+			}
+		}
+	}
+}
+
+.posts-list--default {
+	.mphb_room_service {
+		.post-list__item-content {
+
+			> * {
+				&.post-thumbnail {
+					@include media-breakpoint-up(lg) {
+						padding: 0 $grid-gutter-width / 2 0 0;
+					}
+				}
+				&.entry-content {
+					@include media-breakpoint-up(lg) {
+						padding: 0 0 0 $grid-gutter-width / 2;
+					}
+				}
+			}
+		}
+
+		& + .mphb_room_service {
+			@include posts-loop-border-top;
+		}
+	}
+}
+
+.mphb_sc_services-wrapper,
+.posts-list--default {
+	.mphb_room_service {
+		.mphb-loop-service-thumbnail {
+			#tm_builder_outer_content .tm_pb_module & img,
+			img {
+				@include image-border;
+			}
+		}
+	}
+}
+
+// Single services
+.single-mphb_room_service {
+	.post-thumbnail {
+		@include media-breakpoint-up(lg) {
+			padding: 0 $grid-gutter-width / 2 0 0;
+		}
+	}
+	.entry-content {
+		@include media-breakpoint-up(lg) {
+			padding: 0 0 0 $grid-gutter-width / 2;
+		}
+	}
+}
+
+// Single rooms pages
+.single-mphb_room_type {
+	.entry-content {
+
+		[id^="mphb-gallery-thumbnail"] {
+			.slides {
+				.gallery-item {
+					background-color: $color__black;
+				}
+			}
+		}
+	}
+}
+.mphb-room {
+	&-type {
+		&-gallery-wrapper {
+			.gallery {
+				> ul.slides {
+					background-color: $color__black;
+
+					#tm_builder_outer_content .tm_pb_module & {
+						background-color: $color__black;
+					}
+				}
+			}
+		}
+	}
+	&-attributes-title,
+	&-calendar-title,
+	&-reservation-title {
+		border-top: 1px solid $color__background-hr;
+
+	}
+}
+
+// Calendar
+.datepick-popup {
+
+	@include media-breakpoint-down(lg) {
+		margin: 0 $grid-gutter-width / 2 0 0;
+	}
+}
+.mphb-calendar,
+.datepick-popup {
+	.datepick {
+
+		&-nav {
+			background-color: $color__lighter-gray-2;
+
+			a {
+				&:hover {
+					background-color: $color__lighter-gray-2;
+				}
+			}
+		}
+		&-month {
+			& + div {
+				@include media-breakpoint-up(sm) {
+					border-left: 1px solid $color__background-hr;
+				}
+			}
+			&:last-child {
+				border-top: 1px solid $color__background-hr;
+
+				@include media-breakpoint-up(sm) {
+					border-top: none;
+				}
+			}
+			.datepick-month-header input {
+				padding: $input__indents_with-no-border;
+			}
+
+		}
+	}
+}
+
+// Booking form
+.mphb-booking-form,
+.mphb_sc_search-form {
+	input[type="text"],
+	select {
+		&:focus {
+			background-color: $color__lighter-gray;
+		}
+	}
+	input[type="text"] {
+		padding: $input__indents_with-no-border;
+	}
+}
+
+// Search form
+.mphb_sc_search-form,
+.mphb_widget_search-form {
+	background-color: $color__lighter-gray;
+
+	input[type="text"],
+	select {
+		background-color: $color__white;
+		&:focus {
+			background-color: $color__white;
+		}
+	}
+	input[type="text"] {
+		padding: $input__indents_with-no-border;
+	}
+}
+.mphb_sc_search-wrapper {
+	.mphb_sc_search-form {
+		background-color: $color__white;
+		input[type="text"],
+		select {
+			background-color: $color__lighter-gray-2;
+
+			&:focus {
+				background-color: $color__lighter-gray-2;
+			}
+		}
+		&.loading {
+			&:before {
+				background-color: $color__black;
+			}
+		}
+	}
+	p,
+	.mphb_sc_search-form > div {
+		&:not(:last-of-type) {
+			border-bottom: 1px solid $color__background-hr;
+
+			@include media-breakpoint-up(xl, $grid-breakpoints-old) {
+				border-bottom: none;
+			}
+
+			&:after {
+				background-color: $color__background-hr;
+			}
+		}
+		&.active {
+			&:before {
+				background-color: $color__lighter-gray-2;
+			}
+		}
+	}
+	.showing-form {
+		&:hover,
+		&.active {
+			background-color: $color__lighter-gray-2;
+		}
+
+		// Select
+		.jq-selectbox__dropdown {
+			&-ul {
+				#tm_builder_outer_content .tm_pb_module & {
+					background: #fff;
+				}
+			}
+		}
+	}
+}
+
+// Checkout page
+.mphb_sc_checkout-wrapper {
+	#mphb-services-details,
+	.mphb-room-price-breakdown-wrapper,
+	#mphb-customer-details {
+		@include bigger-posts-loop-border-top;
+	}
+}
+
+.mphb-booking-details {
+	$title-column-width: 180px;
+
+	span {
+		flex-basis: $title-column-width;
+		max-width: $title-column-width;
+	}
+}
+
+#mphb-services-details {
+	.mphb_sc_checkout-services-list {
+		input {
+			&:checked {
+				& ~ em {
+					&:before {
+						color: $color__white;
+						background-color: $color__black;
+					}
+				}
+			}
+		}
+		em {
+			&:before {
+				color: $color__lighter-gray;
+				background-color: $color__lighter-gray;
+				border: 1px solid $color__background-hr;
+			}
+		}
+	}
+}
+
+.mphb-room-price-breakdown-wrapper {
+	.mphb-price-breakdown {
+		tr {
+			&:nth-of-type(odd) {
+				background-color: $color__lighter-gray;
+			}
+		}
+		tbody {
+			tr {
+				&:first-child {
+					background-color: $color__gray;
+				}
+				&:not(:first-child) {
+					th,
+					td {
+						&:last-child:not([colspan="3"]) {
+							border-left: 1px solid $color__background-hr;
+						}
+						& + td,
+						& + th {
+							border-left: 1px solid $color__background-hr;
+						}
+					}
+				}
+			}
+		}
+		tfoot {
+			tr {
+				th {
+					border: none;
+
+					&:last-child {
+						border-left: 1px solid $color__background-hr;
+					}
+				}
+			}
+		}
+	}
+}
+
+.mphb-total-price {
+	.mphb-total-price-field {
+		margin-top: -.49em;
+	}
+}

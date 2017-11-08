@@ -1,0 +1,42 @@
+/* Services item */
+.cherry-services {
+	.services-item {
+		* + .title_wrap {
+			margin-top: 22px;
+		}
+		* + .content_wrap {
+			margin-top: 10px;
+		}
+
+		.inner_wraper{
+			padding: 30px 15px 30px;
+			@include media-breakpoint-up(md) {
+				padding: 40px 45px 35px 40px;
+			}
+			border: 1px solid $color__border-services;
+			transition: .3s;
+			&:hover{
+				border-color: $color__white;
+				background: $color__white;
+			}
+		}
+	}
+}
+
+.services-single-item {
+	.title_wrap{
+		text-align: center;
+	}
+	> *:not(:first-child) {
+		margin-top: 30px;
+	}
+}
+
+.service-cta {
+	padding: 7% 10%;
+	.cta-form{
+		.col-md-12{
+			flex: 1 1 100%;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+.smart-slider{
+	.sp-content-container{
+		&:before{
+			content: "";
+			position:absolute;
+			left:0;
+			right:0;
+			top:0;
+			bottom:0;
+			display: inline-block;
+			background-color: rgba($color__dark, .5);
+
+		}
+	}
+
+	&__instance{
+		h2.sp-title{
+			max-width: 90%;
+			@media (min-width: 1200px) {
+				@include font-size(3.125);
+			}
+		}
+		div.sp-arrow{
+			background-color: transparent;
+			width: 20px;
+			height: 20px;
+			transition: .3s;
+			&:before{
+				line-height: 20px;
+			}
+		}
+
+		.sp-horizontal{
+			.sp-previous-arrow{
+				left: 13px;
+				&:before{
+					content:'\f053';
+					@include font-awesome-icon;
+				}
+			}
+			.sp-next-arrow{
+				right: 13px;
+				&:before{
+					content:'\f054';
+					@include font-awesome-icon;
+				}
+			}
+			.sp-previous-arrow,
+			.sp-next-arrow{
+				@include font-size(1.25);
+			}
+			.sp-arrows{
+				margin-top: 0;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}

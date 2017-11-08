@@ -1,0 +1,25 @@
+#tm_builder_outer_content {
+
+	.tm_pb_social_media_follow.tm_pb_module {
+
+		@include grid-indent(8px, 'margin');
+
+		li {
+			float: none;
+			display: inline-block;
+
+			a.icon {
+				margin-right: 0;
+			}
+			a.follow_button {
+				margin-right: 0;
+				margin-left: 10px;
+			}
+
+			span.tm-pb-icon {
+				@include font-size(1.25);
+				line-height: 32px;
+			}
+		}
+	}
+}

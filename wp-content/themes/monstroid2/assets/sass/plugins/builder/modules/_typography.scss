@@ -1,0 +1,53 @@
+#tm_builder_outer_content .tm_pb_module {
+	ul:not([class]) {
+		list-style: none;
+		margin: 0 0 1.5em 0;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		li {
+			list-style: inherit;
+
+			& + li,
+			> ul li,
+			> ol li {
+				margin-top: 5px;
+			}
+		}
+
+		> li{
+			&:before {
+				content: '•';
+				margin-right: 10px;
+			}
+		}
+	}
+	ol, ul:not([class]) {
+		li > ul:not([class]),
+		li > ol {
+			margin-bottom: 0;
+
+		}
+	}
+
+	li > ul:not([class]) {
+		margin-left: 1.1em;
+	}
+
+	ol > li > ul:not([class]) {
+		margin-left: 0;
+	}
+
+	li > ol {
+		margin-left: 3em;
+	}
+
+	ol {
+		list-style: decimal-leading-zero;
+
+		> li {
+			list-style: inherit;
+		}
+	}
+}
+

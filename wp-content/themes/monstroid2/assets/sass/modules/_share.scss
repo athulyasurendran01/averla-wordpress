@@ -1,0 +1,32 @@
+.share-btns {
+	&__list {
+		@include grid-indent(10px);
+		line-height: 1;
+		.single & {
+			@include grid-indent(12px);
+		}
+
+		.single-modern-header & {
+			margin-top: 35px;
+			@include media-breakpoint-up(lg) {
+				margin-top: 55px;
+			}
+		}
+	}
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__link {
+		line-height: 1.5em;
+		display: block;
+		height: 1.5em;
+		text-align: center;
+		text-decoration: none;
+		@include font-size(.9375);
+
+		.single &{
+			@include font-size(1.25);
+		}
+	}
+}

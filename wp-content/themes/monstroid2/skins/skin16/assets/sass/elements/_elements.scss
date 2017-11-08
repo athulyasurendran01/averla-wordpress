@@ -1,0 +1,46 @@
+blockquote {
+	text-transform: uppercase;
+
+	&:before {
+		@include nucleo-mini-icon;
+
+		content: '\eb16';
+		display: block;
+		font-size: 30px;
+		margin-bottom: 22px;
+	}
+	cite {
+		text-transform: none;
+		margin-top: 22px;
+	}
+	p + & {
+		@include media-breakpoint-up(lg) {
+			margin-top: 48px;
+		}
+	}
+	.entry-content > & {
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 44px;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Lists
+--------------------------------------------------------------*/
+@import "lists";
+
+/*--------------------------------------------------------------
+## Tables
+--------------------------------------------------------------*/
+@import "tables";
+
+/*--------------------------------------------------------------
+## Preloader
+--------------------------------------------------------------*/
+@import "page-preloader";
+
+/*--------------------------------------------------------------
+## ToTop button
+--------------------------------------------------------------*/
+@import "totop-button";

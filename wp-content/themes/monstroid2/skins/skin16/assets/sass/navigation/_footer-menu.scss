@@ -1,0 +1,29 @@
+.footer-menu__items {
+	.menu-item {
+		text-transform: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		@include font-size(.875);
+
+		&:before {
+			content: '';
+			margin: 0 10px;
+			width: 1px;
+			height: 21px;
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			background-color: $color_hr;
+
+			.invert & {
+				background-color: $color_hr_invert;
+			}
+		}
+		&:first-child {
+			&:before {
+				display: none;
+			}
+		}
+	}
+}

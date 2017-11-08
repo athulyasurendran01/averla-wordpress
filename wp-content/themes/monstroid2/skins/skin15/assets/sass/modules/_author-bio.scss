@@ -1,0 +1,19 @@
+.post-author-bio {
+	padding-top: 90px;
+	margin-bottom: 80px;
+	.post-author__content{
+		.site-main & {
+			@include font-size(1);
+		}
+	}
+	.post-author__avatar{
+		@include media-breakpoint-up(lg) {
+			margin: 10px 50px 10px 0;
+		}
+		.avatar{
+			@include media-breakpoint-up(lg) {
+				width: 185px;
+			}
+		}
+	}
+}

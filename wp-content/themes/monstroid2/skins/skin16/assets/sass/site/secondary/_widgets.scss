@@ -1,0 +1,38 @@
+.widget {
+	margin-bottom: 70px;
+
+	.footer-area & {
+		margin-bottom: 66px;
+	}
+	.sidebar & {
+		margin-bottom: 63px;
+	}
+	.footer-area:not(.footer-area--fullwidth) &,
+	.sidebar &,
+	.tm_pb_column_1_3 &,
+	.tm_pb_column_1_4 & {
+		@include font-size(1);
+		line-height: 1.6875;
+	}
+	& + .widget {
+		border: none;
+		padding-top: 0;
+	}
+}
+
+.widget-title {
+	.footer-area & {
+		margin-bottom: 21px;
+	}
+}
+
+.position-one-left-sidebar .site-content_wrap .sidebar,
+.position-one-right-sidebar .site-content_wrap .sidebar {
+	padding-left: $grid-gutter-width / 2;
+	padding-right: $grid-gutter-width / 2;
+
+	&:before,
+	&:after {
+		display: none;
+	}
+}

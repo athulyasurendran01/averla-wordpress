@@ -1,0 +1,38 @@
+blockquote{
+	text-align: left;
+	cite{
+		display: inline-block;
+	}
+	&:before{
+		display: inline-block;
+	}
+	&.post-format-quote:before{
+		display: block;
+	}
+}
+
+@supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent){
+	blockquote cite, blockquote:before{
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+/*--------------------------------------------------------------
+## Lists
+--------------------------------------------------------------*/
+@import "lists";
+
+/*--------------------------------------------------------------
+## Tables
+--------------------------------------------------------------*/
+@import "tables";
+
+/*--------------------------------------------------------------
+## Preloader
+--------------------------------------------------------------*/
+@import "page-preloader";
+
+/*--------------------------------------------------------------
+## ToTop button
+--------------------------------------------------------------*/
+@import "totop-button";

@@ -1,0 +1,39 @@
+.swiper {
+	&-button-next,
+	&-button-prev,
+	&-container.swiper-container-rtl .swiper-button-prev,
+	&-container.swiper-container-rtl .swiper-button-next {
+		width: 44px;
+		height: 44px;
+		margin: -22px 0 0 0;
+		transition: .3s;
+		i {
+			line-height: 44px;
+		}
+		&:not(.swiper-button-disabled):hover {
+			box-shadow: none;
+		}
+	}
+	&-button-next {
+		.format-gallery & {
+			right: 15px;
+		}
+		@include border-radius($border__radius);
+		&:not(.swiper-button-disabled):hover {
+			transform: translateX(-2px) translateY(3px) translateZ(0);
+		}
+	}
+	&-button-prev {
+		.format-gallery & {
+			left: 15px;
+		}
+		@include border-radius($border__radius);
+		&:not(.swiper-button-disabled):hover {
+			transform: translateX(2px) translateY(3px) translateZ(0);
+		}
+	}
+	&-container.swiper-container-rtl .swiper-button-prev,
+	&-container.swiper-container-rtl .swiper-button-next {
+		@include border-radius($border__radius);
+	}
+}

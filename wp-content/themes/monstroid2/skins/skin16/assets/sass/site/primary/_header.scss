@@ -1,0 +1,20 @@
+.site-header.style-3 .header-container_wrap,
+.site-header.style-3 .top-panel__container {
+	padding-left: 40px;
+	padding-right: 50px;
+}
+
+.style-3 .header-container,
+.style-7 .header-container {
+	@include media-breakpoint-up(md) {
+		padding-top: 19px;
+		padding-bottom: 26px;
+	}
+}
+.site-header.default .header-container.invert::after,
+.site-header.style-4 .header-container.invert::after {
+	display: none;
+}
+
+@import "header/top-panel";
+@import "header/logo";

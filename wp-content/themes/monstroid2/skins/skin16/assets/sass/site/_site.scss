@@ -1,0 +1,58 @@
+.site-content_wrap {
+	@include media-breakpoint-up(lg) {
+		margin-top: 6.9375em;
+	}
+	.breadcrumbs + & {
+		@include media-breakpoint-up(lg) {
+			margin-top: 1em;
+		}
+		.blog & {
+			@include media-breakpoint-up(lg) {
+				margin-top: 4.25em;
+			}
+		}
+	}
+	.single.single-post-modern & {
+		margin-top: 0;
+	}
+}
+.site-main {
+	@include media-breakpoint-up(lg) {
+		margin-bottom: 7.5em;
+	}
+	.blog & {
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 6.6875em;
+		}
+	}
+	.single-projects & {
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 6.5em;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Layout
+--------------------------------------------------------------*/
+@import "../layout/layout";
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+@import "primary/header";
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Post Formats
+--------------------------------------------------------------*/
+@import "primary/post-formats";
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+@import "primary/footer";

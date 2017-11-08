@@ -1,0 +1,13 @@
+.widget-banner {
+	&__img {
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__link {
+		display: inline-block;
+		&:hover{
+			transform: scale(1.01);
+			box-shadow: $box__shadow_banner;
+		}
+	}
+}

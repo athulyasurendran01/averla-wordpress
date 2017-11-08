@@ -1,0 +1,46 @@
+blockquote {
+	position: relative;
+	margin: 0 0 25px;
+	@include font-size(24/16);
+	background:$color__white;
+	text-align: left;
+	@include media-breakpoint-up(md) {
+		padding: 24px 50px 24px 80px;
+	}
+	padding: 15px;
+	&:before{
+		@include media-breakpoint-up(md) {
+			position: absolute;
+			left: 30px;
+			top: 27px;
+		}
+	}
+}
+.post-format-quote{
+	background:$color__white;
+	max-width: none;
+	text-align: left;
+}
+.format-quote .post-featured-content {
+	padding: 0;
+}
+
+/*--------------------------------------------------------------
+## Lists
+--------------------------------------------------------------*/
+@import "lists";
+
+/*--------------------------------------------------------------
+## Tables
+--------------------------------------------------------------*/
+@import "tables";
+
+/*--------------------------------------------------------------
+## Preloader
+--------------------------------------------------------------*/
+@import "page-preloader";
+
+/*--------------------------------------------------------------
+## ToTop button
+--------------------------------------------------------------*/
+@import "totop-button";

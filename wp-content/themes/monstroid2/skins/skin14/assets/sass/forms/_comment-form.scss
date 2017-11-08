@@ -1,0 +1,16 @@
+.comment-reply-title #cancel-comment-reply-link{
+	font-style: normal;
+}
+
+.comment {
+	&-form {
+		&-comment,
+		&-author,
+		&-email,
+		&-url {
+			i {
+				top: 5.5px;
+			}
+		}
+	}
+}
